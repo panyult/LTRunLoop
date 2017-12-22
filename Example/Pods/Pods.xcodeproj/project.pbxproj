@@ -12,10 +12,15 @@
 		29AAECE24C4882A0D62F87D18E96CA3C /* Pods-LTRunLoop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */; };
 		2FD0B2659AF1516891E2C78A9061A4DC /* Pods-LTRunLoop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */; };
 		4022BA5B20CCAAC4D994F47A03E26CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		45D162BF62560CE38FC757B745F76DF7 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA28313B0D9501F7DAC66999B9C3892 /* ReplaceMe.m */; };
 		4E15E29711DC70DD1DD3AFEC495A75F0 /* Pods-LTRunLoop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCE5D4CC0FA3924488FE122B40E23BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62473481FED0C6300D3792C /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473461FED0C6300D3792C /* LTRunLoopManager.h */; };
+		A62473491FED0C6300D3792C /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473471FED0C6300D3792C /* LTRunLoopManager.m */; };
+		A624734C1FED0C8A00D3792C /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A624734A1FED0C8A00D3792C /* RunLoopSource.h */; };
+		A624734D1FED0C8A00D3792C /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A624734B1FED0C8A00D3792C /* RunLoopSource.m */; };
+		A62473501FED0C9B00D3792C /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A624734E1FED0C9B00D3792C /* RunLoopContext.h */; };
+		A62473511FED0C9B00D3792C /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A624734F1FED0C9B00D3792C /* RunLoopContext.m */; };
 		FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -31,35 +36,40 @@
 
 /* Begin PBXFileReference section */
 		034AA8153709ADD26E9CDE7A4E2FF933 /* LTRunLoop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTRunLoop.xcconfig; sourceTree = "<group>"; };
-		0461F2BBC843299905F5F38B9050DA01 /* LTRunLoop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LTRunLoop.modulemap; sourceTree = "<group>"; };
+		0461F2BBC843299905F5F38B9050DA01 /* LTRunLoop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTRunLoop.modulemap; sourceTree = "<group>"; };
 		09C2DE189DB913702BC8E3142D9A6BCF /* Pods-LTRunLoop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTRunLoop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		130DC00D908E3E174802498174149319 /* LTRunLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LTRunLoop.framework; path = LTRunLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		130DC00D908E3E174802498174149319 /* LTRunLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTRunLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D7072AAED511FF2FF73FBF00D054CF /* Pods-LTRunLoop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTRunLoop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		28FAC6293037EEBDD2B04D71A4BDB101 /* Pods-LTRunLoop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTRunLoop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3448E70CDE1E8BA2334BF07E00E2B83A /* Pods-LTRunLoop_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3DAC7C496F9C9585249ED10ABE559AC4 /* Pods-LTRunLoop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LTRunLoop_Tests.modulemap"; sourceTree = "<group>"; };
+		3DAC7C496F9C9585249ED10ABE559AC4 /* Pods-LTRunLoop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Tests.modulemap"; sourceTree = "<group>"; };
 		3EF24F2BB8781F3E7B61BCC74B99344A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-umbrella.h"; sourceTree = "<group>"; };
 		56DC0CE50BC1C18C2C0D43CF58078380 /* Pods-LTRunLoop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTRunLoop_Example-umbrella.h"; sourceTree = "<group>"; };
 		57ED304144E149F607AB58A621EA5B7F /* Pods-LTRunLoop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5BA28313B0D9501F7DAC66999B9C3892 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LTRunLoop/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTRunLoop-dummy.m"; sourceTree = "<group>"; };
 		60717B990D3014C2862E850D04C0AD17 /* Pods-LTRunLoop_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Example-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78012BB566822D848D4AB9F40E20E758 /* Pods-LTRunLoop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTRunLoop_Tests-umbrella.h"; sourceTree = "<group>"; };
 		859F4FC784FE38109E9E16B49B321C3D /* Pods-LTRunLoop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		969199A43083E0A30D2F3F442549CF46 /* Pods_LTRunLoop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LTRunLoop_Tests.framework; path = "Pods-LTRunLoop_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		969199A43083E0A30D2F3F442549CF46 /* Pods_LTRunLoop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTRunLoop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A16DDB6828FBD407614D5C927BE3FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Tests-dummy.m"; sourceTree = "<group>"; };
 		A09D92F082AFF48679719E8AAB8AE8A2 /* LTRunLoop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-prefix.pch"; sourceTree = "<group>"; };
+		A62473461FED0C6300D3792C /* LTRunLoopManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
+		A62473471FED0C6300D3792C /* LTRunLoopManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
+		A624734A1FED0C8A00D3792C /* RunLoopSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
+		A624734B1FED0C8A00D3792C /* RunLoopSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
+		A624734E1FED0C9B00D3792C /* RunLoopContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
+		A624734F1FED0C9B00D3792C /* RunLoopContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
 		AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Example-dummy.m"; sourceTree = "<group>"; };
 		B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BAB0E1D334109FB401F443CB44567F9B /* Pods-LTRunLoop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LTRunLoop_Example.modulemap"; sourceTree = "<group>"; };
+		BAB0E1D334109FB401F443CB44567F9B /* Pods-LTRunLoop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Example.modulemap"; sourceTree = "<group>"; };
 		CD7BE3A45A7E543282A3E8BEC262CA80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E81EFB66315FC307581E548BEE1AAD /* Pods-LTRunLoop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EE21BD0FB96596AA8BC71E7E977EFEE0 /* Pods_LTRunLoop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LTRunLoop_Example.framework; path = "Pods-LTRunLoop_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE21BD0FB96596AA8BC71E7E977EFEE0 /* Pods_LTRunLoop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTRunLoop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A0E7DC9AE470655D4050C3F1316EFB /* Pods-LTRunLoop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTRunLoop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAAED338EFA312F6A462D885BF423702 /* Pods-LTRunLoop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Tests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +150,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A62473391FED0B3000D3792C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A62473461FED0C6300D3792C /* LTRunLoopManager.h */,
+				A62473471FED0C6300D3792C /* LTRunLoopManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A624733A1FED0B5200D3792C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A624734A1FED0C8A00D3792C /* RunLoopSource.h */,
+				A624734B1FED0C8A00D3792C /* RunLoopSource.m */,
+				A624734E1FED0C9B00D3792C /* RunLoopContext.h */,
+				A624734F1FED0C9B00D3792C /* RunLoopContext.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A624733B1FED0B7400D3792C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +194,9 @@
 		B8C6242A0FEA08C8A7C69CBA9A40E28A /* LTRunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				5BA28313B0D9501F7DAC66999B9C3892 /* ReplaceMe.m */,
+				A62473391FED0B3000D3792C /* Manager */,
+				A624733A1FED0B5200D3792C /* Entity */,
+				A624733B1FED0B7400D3792C /* Helper */,
 				B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */,
 			);
 			name = LTRunLoop;
@@ -213,6 +252,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62473481FED0C6300D3792C /* LTRunLoopManager.h in Headers */,
+				A624734C1FED0C8A00D3792C /* RunLoopSource.h in Headers */,
+				A62473501FED0C9B00D3792C /* RunLoopContext.h in Headers */,
 				9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */,
-				45D162BF62560CE38FC757B745F76DF7 /* ReplaceMe.m in Sources */,
+				A624734D1FED0C8A00D3792C /* RunLoopSource.m in Sources */,
+				A62473491FED0C6300D3792C /* LTRunLoopManager.m in Sources */,
+				A62473511FED0C9B00D3792C /* RunLoopContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
