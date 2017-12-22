@@ -24,7 +24,7 @@ s.ios.deployment_target = '8.0'
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 s.source_files = 'LTRunLoop/Classes/**/*'
-
+s.frameworks   = 'UIKit,Foundation,CoreFoundation'
 # s.resource_bundles = {
 #   'LTRunLoop' => ['LTRunLoop/Assets/*.png']
 # }
