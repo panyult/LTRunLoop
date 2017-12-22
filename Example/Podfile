@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LTRunLoop_Example' do
+  pod 'LTRunLoop', :path => '../'
+
+  target 'LTRunLoop_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
