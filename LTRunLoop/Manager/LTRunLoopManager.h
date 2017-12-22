@@ -9,7 +9,11 @@
 
 @interface LTRunLoopManager : NSObject
 + (instancetype)manager;
-    
+
+- (void)registerHandlerClassName:(NSString *)handlerClassName forDataClassName:(NSString *)dataClassName;
+
 - (void)addPendingData:(id)data;
 - (void)start;
+
+
 @end

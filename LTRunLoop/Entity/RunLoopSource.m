@@ -6,6 +6,7 @@
 //
 
 #import "RunLoopSource.h"
+
 @interface RunLoopSource()
     
 @property (nonatomic, assign) CFRunLoopSourceRef inputSource;
@@ -83,6 +84,7 @@ void RunLoopSourcePerformRoutine (void *info)
         id data = obj.dataArray.firstObject;
         if (data) {
 //            [TaskHandler handleData:data];
+//        TODO:lt use Notification to let  manager know something hanppened
         }
         
         [obj.dataLock lock];

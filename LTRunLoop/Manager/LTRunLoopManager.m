@@ -7,7 +7,7 @@
 
 #import "LTRunLoopManager.h"
 #import "RunLoopContext.h"
-
+#import "DataChecker.h"
 
 static LTRunLoopManager *_manager;
 
@@ -22,6 +22,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
 @property (nonatomic, assign) CFRunLoopRef workerRunLoop;
 @property (nonatomic, strong) NSMutableArray *runLoopContextArray;
 
+@property (nonatomic, strong) NSMutableDictionary *dataToHandlerDictionary;
 @end
 
 @implementation LTRunLoopManager
@@ -47,9 +48,23 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
         _workerThread.name = kWorkerThreadName;
         
         _runLoopContextArray = [NSMutableArray array];
+        _dataToHandlerDictionary = [NSMutableDictionary dictionary];
     });
     return _manager;
 }
+
+#pragma mark - bind handler class and data class
+
+- (void)registerHandlerClassName:(NSString *)handlerClassName forDataClassName:(NSString *)dataClassName
+{
+    
+    NSAssert(![DataChecker isStringEmptyOrNil:handlerClassName]
+             && ![DataChecker isStringEmptyOrNil:dataClassName],
+             @"handlerClassName or dataClassName can not be nil");
+    
+    [_dataToHandlerDictionary setObject:dataClassName forKey:handlerClassName];
+}
+
 
 #pragma mark - start the worker thread
 
@@ -102,6 +117,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
     _workerRunLoop = NULL;
     _workerThread = nil;
     _runLoopContextArray = nil;
+    _dataToHandlerDictionary = nil;
 }
 
 #pragma mark - manage tasks

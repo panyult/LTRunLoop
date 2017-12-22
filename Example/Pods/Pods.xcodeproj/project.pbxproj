@@ -15,12 +15,16 @@
 		4E15E29711DC70DD1DD3AFEC495A75F0 /* Pods-LTRunLoop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCE5D4CC0FA3924488FE122B40E23BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A62473481FED0C6300D3792C /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473461FED0C6300D3792C /* LTRunLoopManager.h */; };
-		A62473491FED0C6300D3792C /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473471FED0C6300D3792C /* LTRunLoopManager.m */; };
-		A624734C1FED0C8A00D3792C /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A624734A1FED0C8A00D3792C /* RunLoopSource.h */; };
-		A624734D1FED0C8A00D3792C /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A624734B1FED0C8A00D3792C /* RunLoopSource.m */; };
-		A62473501FED0C9B00D3792C /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A624734E1FED0C9B00D3792C /* RunLoopContext.h */; };
-		A62473511FED0C9B00D3792C /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A624734F1FED0C9B00D3792C /* RunLoopContext.m */; };
+		A624735B1FED11F700D3792C /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473541FED11F700D3792C /* RunLoopContext.h */; };
+		A624735C1FED11F700D3792C /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473551FED11F700D3792C /* RunLoopContext.m */; };
+		A624735D1FED11F700D3792C /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473561FED11F700D3792C /* RunLoopSource.h */; };
+		A624735E1FED11F700D3792C /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473571FED11F700D3792C /* RunLoopSource.m */; };
+		A624735F1FED11F700D3792C /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473591FED11F700D3792C /* LTRunLoopManager.h */; };
+		A62473601FED11F700D3792C /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A624735A1FED11F700D3792C /* LTRunLoopManager.m */; };
+		A62473671FED170600D3792C /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473651FED170600D3792C /* DataChecker.h */; };
+		A62473681FED170600D3792C /* DataChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473661FED170600D3792C /* DataChecker.m */; };
+		A624736C1FED19E300D3792C /* RunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A624736A1FED19E300D3792C /* RunLoopSourceHandler.h */; };
+		A624736D1FED19E300D3792C /* RunLoopSourceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A624736B1FED19E300D3792C /* RunLoopSourceHandler.m */; };
 		FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -58,12 +62,16 @@
 		9A16DDB6828FBD407614D5C927BE3FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Tests-dummy.m"; sourceTree = "<group>"; };
 		A09D92F082AFF48679719E8AAB8AE8A2 /* LTRunLoop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-prefix.pch"; sourceTree = "<group>"; };
-		A62473461FED0C6300D3792C /* LTRunLoopManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
-		A62473471FED0C6300D3792C /* LTRunLoopManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
-		A624734A1FED0C8A00D3792C /* RunLoopSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
-		A624734B1FED0C8A00D3792C /* RunLoopSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
-		A624734E1FED0C9B00D3792C /* RunLoopContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
-		A624734F1FED0C9B00D3792C /* RunLoopContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		A62473541FED11F700D3792C /* RunLoopContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
+		A62473551FED11F700D3792C /* RunLoopContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		A62473561FED11F700D3792C /* RunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
+		A62473571FED11F700D3792C /* RunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
+		A62473591FED11F700D3792C /* LTRunLoopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
+		A624735A1FED11F700D3792C /* LTRunLoopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
+		A62473651FED170600D3792C /* DataChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataChecker.h; sourceTree = "<group>"; };
+		A62473661FED170600D3792C /* DataChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataChecker.m; sourceTree = "<group>"; };
+		A624736A1FED19E300D3792C /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
+		A624736B1FED19E300D3792C /* RunLoopSourceHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSourceHandler.m; sourceTree = "<group>"; };
 		AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Example-dummy.m"; sourceTree = "<group>"; };
 		B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0E1D334109FB401F443CB44567F9B /* Pods-LTRunLoop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Example.modulemap"; sourceTree = "<group>"; };
@@ -150,31 +158,38 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A62473391FED0B3000D3792C /* Manager */ = {
+		A62473521FED11F700D3792C /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				A62473461FED0C6300D3792C /* LTRunLoopManager.h */,
-				A62473471FED0C6300D3792C /* LTRunLoopManager.m */,
+				A62473651FED170600D3792C /* DataChecker.h */,
+				A62473661FED170600D3792C /* DataChecker.m */,
 			);
-			path = Manager;
+			name = Helper;
+			path = LTRunLoop/Helper;
 			sourceTree = "<group>";
 		};
-		A624733A1FED0B5200D3792C /* Entity */ = {
+		A62473531FED11F700D3792C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A624734A1FED0C8A00D3792C /* RunLoopSource.h */,
-				A624734B1FED0C8A00D3792C /* RunLoopSource.m */,
-				A624734E1FED0C9B00D3792C /* RunLoopContext.h */,
-				A624734F1FED0C9B00D3792C /* RunLoopContext.m */,
+				A62473541FED11F700D3792C /* RunLoopContext.h */,
+				A62473551FED11F700D3792C /* RunLoopContext.m */,
+				A62473561FED11F700D3792C /* RunLoopSource.h */,
+				A62473571FED11F700D3792C /* RunLoopSource.m */,
+				A624736A1FED19E300D3792C /* RunLoopSourceHandler.h */,
+				A624736B1FED19E300D3792C /* RunLoopSourceHandler.m */,
 			);
-			path = Entity;
+			name = Entity;
+			path = LTRunLoop/Entity;
 			sourceTree = "<group>";
 		};
-		A624733B1FED0B7400D3792C /* Helper */ = {
+		A62473581FED11F700D3792C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				A62473591FED11F700D3792C /* LTRunLoopManager.h */,
+				A624735A1FED11F700D3792C /* LTRunLoopManager.m */,
 			);
-			path = Helper;
+			name = Manager;
+			path = LTRunLoop/Manager;
 			sourceTree = "<group>";
 		};
 		B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */ = {
@@ -194,9 +209,9 @@
 		B8C6242A0FEA08C8A7C69CBA9A40E28A /* LTRunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				A62473391FED0B3000D3792C /* Manager */,
-				A624733A1FED0B5200D3792C /* Entity */,
-				A624733B1FED0B7400D3792C /* Helper */,
+				A62473581FED11F700D3792C /* Manager */,
+				A62473531FED11F700D3792C /* Entity */,
+				A62473521FED11F700D3792C /* Helper */,
 				B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */,
 			);
 			name = LTRunLoop;
@@ -252,9 +267,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62473481FED0C6300D3792C /* LTRunLoopManager.h in Headers */,
-				A624734C1FED0C8A00D3792C /* RunLoopSource.h in Headers */,
-				A62473501FED0C9B00D3792C /* RunLoopContext.h in Headers */,
+				A624735B1FED11F700D3792C /* RunLoopContext.h in Headers */,
+				A624735D1FED11F700D3792C /* RunLoopSource.h in Headers */,
+				A62473671FED170600D3792C /* DataChecker.h in Headers */,
+				A624736C1FED19E300D3792C /* RunLoopSourceHandler.h in Headers */,
+				A624735F1FED11F700D3792C /* LTRunLoopManager.h in Headers */,
 				9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,9 +389,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */,
-				A624734D1FED0C8A00D3792C /* RunLoopSource.m in Sources */,
-				A62473491FED0C6300D3792C /* LTRunLoopManager.m in Sources */,
-				A62473511FED0C9B00D3792C /* RunLoopContext.m in Sources */,
+				A624735E1FED11F700D3792C /* RunLoopSource.m in Sources */,
+				A62473681FED170600D3792C /* DataChecker.m in Sources */,
+				A624735C1FED11F700D3792C /* RunLoopContext.m in Sources */,
+				A624736D1FED19E300D3792C /* RunLoopSourceHandler.m in Sources */,
+				A62473601FED11F700D3792C /* LTRunLoopManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
