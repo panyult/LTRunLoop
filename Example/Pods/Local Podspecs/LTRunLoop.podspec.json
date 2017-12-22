@@ -1,0 +1,22 @@
+{
+  "name": "LTRunLoop",
+  "version": "0.1.0",
+  "summary": "A short description of LTRunLoop.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/panyult/LTRunLoop",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "panyult": "litaoxiwang@163.com"
+  },
+  "source": {
+    "git": "https://github.com/panyult/LTRunLoop.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LTRunLoop/Classes/**/*"
+}
