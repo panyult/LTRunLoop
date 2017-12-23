@@ -101,10 +101,9 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
         
         Class handlerClass = NSClassFromString(task.sourceHandlerClassName);
         
-        if (handlerClass && class_respondsToSelector(handlerClass, @selector(class_runLoopSourceHandled:))) {
+        if (handlerClass && class_conformsToProtocol(handlerClass, @protocol(RunLoopSourceHandler))) {
             
-            objc_msgSend(handlerClass,@selector(class_runLoopSourceHandled:),data);
-            
+            [[handlerClass class] performSelector:@selector(class_runLoopSourceHandled:) withObject:data];
         }
     }
     
