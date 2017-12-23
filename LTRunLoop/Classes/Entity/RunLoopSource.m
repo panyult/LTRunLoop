@@ -22,7 +22,7 @@
 #pragma mark - handler method declaration
     
 void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
-void RunLoopSourcePerformRoutine (void *info,CFRunLoopRef rl, CFStringRef mode);
+void RunLoopSourcePerformRoutine (void *info);
 void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
     
 #pragma mark - life cycle
@@ -120,9 +120,9 @@ void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode
     handleSource(info,rl,mode,RunLoopSourceHandleTypeWillScheduled);
 }
 
-void RunLoopSourcePerformRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
+void RunLoopSourcePerformRoutine (void *info)
 {
-    handleSource(info,rl,mode,RunLoopSourceHandleTypeHandled);
+    handleSource(info,NULL,NULL,RunLoopSourceHandleTypeHandled);
 }
 
 void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)

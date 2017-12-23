@@ -1,12 +1,13 @@
+platform :ios, '8.0'
 
-platform: ios,'8.0'
+use_frameworks!
 
 target 'LTRunLoop_Example' do
-  pod 'LTRunLoop'
+  pod 'LTRunLoop', :path => '../'
 
-end
+  target 'LTRunLoop_Tests' do
+    inherit! :search_paths
 
-target 'LTRunLoop_Tests' do
-    pod 'LTRunLoop'
     
+  end
 end

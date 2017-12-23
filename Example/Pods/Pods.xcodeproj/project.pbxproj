@@ -15,18 +15,20 @@
 		4E15E29711DC70DD1DD3AFEC495A75F0 /* Pods-LTRunLoop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCE5D4CC0FA3924488FE122B40E23BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A60E52C11FEDF37300953A46 /* LTSourceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52BF1FEDF37300953A46 /* LTSourceTask.h */; };
-		A60E52C21FEDF37300953A46 /* LTSourceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52C01FEDF37300953A46 /* LTSourceTask.m */; };
-		A60E52C51FEDFC8500953A46 /* LTSourceData.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52C31FEDFC8500953A46 /* LTSourceData.h */; };
-		A60E52C61FEDFC8500953A46 /* LTSourceData.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52C41FEDFC8500953A46 /* LTSourceData.m */; };
-		A624735B1FED11F700D3792C /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473541FED11F700D3792C /* RunLoopContext.h */; };
-		A624735C1FED11F700D3792C /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473551FED11F700D3792C /* RunLoopContext.m */; };
-		A624735D1FED11F700D3792C /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473561FED11F700D3792C /* RunLoopSource.h */; };
-		A624735E1FED11F700D3792C /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473571FED11F700D3792C /* RunLoopSource.m */; };
-		A624735F1FED11F700D3792C /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473591FED11F700D3792C /* LTRunLoopManager.h */; };
-		A62473601FED11F700D3792C /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A624735A1FED11F700D3792C /* LTRunLoopManager.m */; };
-		A62473671FED170600D3792C /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A62473651FED170600D3792C /* DataChecker.h */; };
-		A62473681FED170600D3792C /* DataChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = A62473661FED170600D3792C /* DataChecker.m */; };
+		A60E52DC1FEE190600953A46 /* LTSourceData.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52CC1FEE190600953A46 /* LTSourceData.h */; };
+		A60E52DD1FEE190600953A46 /* LTSourceData.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52CD1FEE190600953A46 /* LTSourceData.m */; };
+		A60E52DE1FEE190600953A46 /* LTSourceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52CE1FEE190600953A46 /* LTSourceTask.h */; };
+		A60E52DF1FEE190600953A46 /* LTSourceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52CF1FEE190600953A46 /* LTSourceTask.m */; };
+		A60E52E01FEE190600953A46 /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D01FEE190600953A46 /* RunLoopContext.h */; };
+		A60E52E11FEE190600953A46 /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D11FEE190600953A46 /* RunLoopContext.m */; };
+		A60E52E21FEE190600953A46 /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D21FEE190600953A46 /* RunLoopSource.h */; };
+		A60E52E31FEE190600953A46 /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D31FEE190600953A46 /* RunLoopSource.m */; };
+		A60E52E41FEE190600953A46 /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D51FEE190600953A46 /* DataChecker.h */; };
+		A60E52E51FEE190600953A46 /* DataChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D61FEE190600953A46 /* DataChecker.m */; };
+		A60E52E61FEE190600953A46 /* LTRunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D71FEE190600953A46 /* LTRunLoop.h */; };
+		A60E52E71FEE190600953A46 /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D91FEE190600953A46 /* LTRunLoopManager.h */; };
+		A60E52E81FEE190600953A46 /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */; };
+		A60E52E91FEE190600953A46 /* RunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */; };
 		FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -64,20 +66,20 @@
 		9A16DDB6828FBD407614D5C927BE3FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Tests-dummy.m"; sourceTree = "<group>"; };
 		A09D92F082AFF48679719E8AAB8AE8A2 /* LTRunLoop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-prefix.pch"; sourceTree = "<group>"; };
-		A60E52BF1FEDF37300953A46 /* LTSourceTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSourceTask.h; sourceTree = "<group>"; };
-		A60E52C01FEDF37300953A46 /* LTSourceTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSourceTask.m; sourceTree = "<group>"; };
-		A60E52C31FEDFC8500953A46 /* LTSourceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSourceData.h; sourceTree = "<group>"; };
-		A60E52C41FEDFC8500953A46 /* LTSourceData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSourceData.m; sourceTree = "<group>"; };
-		A62473541FED11F700D3792C /* RunLoopContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
-		A62473551FED11F700D3792C /* RunLoopContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
-		A62473561FED11F700D3792C /* RunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
-		A62473571FED11F700D3792C /* RunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
-		A62473591FED11F700D3792C /* LTRunLoopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
-		A624735A1FED11F700D3792C /* LTRunLoopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
-		A62473651FED170600D3792C /* DataChecker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataChecker.h; sourceTree = "<group>"; };
-		A62473661FED170600D3792C /* DataChecker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataChecker.m; sourceTree = "<group>"; };
-		A66EE4011FEDEC0300FE22D8 /* LTRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTRunLoop.h; sourceTree = "<group>"; };
-		A66EE4021FEDEC6000FE22D8 /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
+		A60E52CC1FEE190600953A46 /* LTSourceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSourceData.h; sourceTree = "<group>"; };
+		A60E52CD1FEE190600953A46 /* LTSourceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSourceData.m; sourceTree = "<group>"; };
+		A60E52CE1FEE190600953A46 /* LTSourceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSourceTask.h; sourceTree = "<group>"; };
+		A60E52CF1FEE190600953A46 /* LTSourceTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSourceTask.m; sourceTree = "<group>"; };
+		A60E52D01FEE190600953A46 /* RunLoopContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
+		A60E52D11FEE190600953A46 /* RunLoopContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		A60E52D21FEE190600953A46 /* RunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
+		A60E52D31FEE190600953A46 /* RunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
+		A60E52D51FEE190600953A46 /* DataChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataChecker.h; sourceTree = "<group>"; };
+		A60E52D61FEE190600953A46 /* DataChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataChecker.m; sourceTree = "<group>"; };
+		A60E52D71FEE190600953A46 /* LTRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoop.h; sourceTree = "<group>"; };
+		A60E52D91FEE190600953A46 /* LTRunLoopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
+		A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
+		A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
 		AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Example-dummy.m"; sourceTree = "<group>"; };
 		B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0E1D334109FB401F443CB44567F9B /* Pods-LTRunLoop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Example.modulemap"; sourceTree = "<group>"; };
@@ -164,41 +166,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A62473521FED11F700D3792C /* Helper */ = {
+		A60E52C91FEE190600953A46 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A62473651FED170600D3792C /* DataChecker.h */,
-				A62473661FED170600D3792C /* DataChecker.m */,
+				A60E52D71FEE190600953A46 /* LTRunLoop.h */,
+				A60E52CB1FEE190600953A46 /* Entity */,
+				A60E52D41FEE190600953A46 /* Helper */,
+				A60E52D81FEE190600953A46 /* Manager */,
 			);
-			name = Helper;
-			path = LTRunLoop/Helper;
+			name = Classes;
+			path = LTRunLoop/Classes;
 			sourceTree = "<group>";
 		};
-		A62473531FED11F700D3792C /* Entity */ = {
+		A60E52CB1FEE190600953A46 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A62473541FED11F700D3792C /* RunLoopContext.h */,
-				A62473551FED11F700D3792C /* RunLoopContext.m */,
-				A62473561FED11F700D3792C /* RunLoopSource.h */,
-				A62473571FED11F700D3792C /* RunLoopSource.m */,
-				A60E52BF1FEDF37300953A46 /* LTSourceTask.h */,
-				A60E52C01FEDF37300953A46 /* LTSourceTask.m */,
-				A60E52C31FEDFC8500953A46 /* LTSourceData.h */,
-				A60E52C41FEDFC8500953A46 /* LTSourceData.m */,
+				A60E52CC1FEE190600953A46 /* LTSourceData.h */,
+				A60E52CD1FEE190600953A46 /* LTSourceData.m */,
+				A60E52CE1FEE190600953A46 /* LTSourceTask.h */,
+				A60E52CF1FEE190600953A46 /* LTSourceTask.m */,
+				A60E52D01FEE190600953A46 /* RunLoopContext.h */,
+				A60E52D11FEE190600953A46 /* RunLoopContext.m */,
+				A60E52D21FEE190600953A46 /* RunLoopSource.h */,
+				A60E52D31FEE190600953A46 /* RunLoopSource.m */,
 			);
-			name = Entity;
-			path = LTRunLoop/Entity;
+			path = Entity;
 			sourceTree = "<group>";
 		};
-		A62473581FED11F700D3792C /* Manager */ = {
+		A60E52D41FEE190600953A46 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				A62473591FED11F700D3792C /* LTRunLoopManager.h */,
-				A624735A1FED11F700D3792C /* LTRunLoopManager.m */,
-				A66EE4021FEDEC6000FE22D8 /* RunLoopSourceHandler.h */,
+				A60E52D51FEE190600953A46 /* DataChecker.h */,
+				A60E52D61FEE190600953A46 /* DataChecker.m */,
 			);
-			name = Manager;
-			path = LTRunLoop/Manager;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A60E52D81FEE190600953A46 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A60E52D91FEE190600953A46 /* LTRunLoopManager.h */,
+				A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */,
+				A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */ = {
@@ -218,10 +229,7 @@
 		B8C6242A0FEA08C8A7C69CBA9A40E28A /* LTRunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				A66EE4011FEDEC0300FE22D8 /* LTRunLoop.h */,
-				A62473581FED11F700D3792C /* Manager */,
-				A62473531FED11F700D3792C /* Entity */,
-				A62473521FED11F700D3792C /* Helper */,
+				A60E52C91FEE190600953A46 /* Classes */,
 				B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */,
 			);
 			name = LTRunLoop;
@@ -277,13 +285,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60E52C51FEDFC8500953A46 /* LTSourceData.h in Headers */,
-				A624735B1FED11F700D3792C /* RunLoopContext.h in Headers */,
-				A624735D1FED11F700D3792C /* RunLoopSource.h in Headers */,
-				A60E52C11FEDF37300953A46 /* LTSourceTask.h in Headers */,
-				A62473671FED170600D3792C /* DataChecker.h in Headers */,
-				A624735F1FED11F700D3792C /* LTRunLoopManager.h in Headers */,
+				A60E52E61FEE190600953A46 /* LTRunLoop.h in Headers */,
+				A60E52E41FEE190600953A46 /* DataChecker.h in Headers */,
+				A60E52E71FEE190600953A46 /* LTRunLoopManager.h in Headers */,
+				A60E52E91FEE190600953A46 /* RunLoopSourceHandler.h in Headers */,
 				9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */,
+				A60E52DC1FEE190600953A46 /* LTSourceData.h in Headers */,
+				A60E52E01FEE190600953A46 /* RunLoopContext.h in Headers */,
+				A60E52DE1FEE190600953A46 /* LTSourceTask.h in Headers */,
+				A60E52E21FEE190600953A46 /* RunLoopSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,13 +409,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60E52DF1FEE190600953A46 /* LTSourceTask.m in Sources */,
+				A60E52E81FEE190600953A46 /* LTRunLoopManager.m in Sources */,
+				A60E52DD1FEE190600953A46 /* LTSourceData.m in Sources */,
 				FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */,
-				A624735E1FED11F700D3792C /* RunLoopSource.m in Sources */,
-				A62473681FED170600D3792C /* DataChecker.m in Sources */,
-				A60E52C21FEDF37300953A46 /* LTSourceTask.m in Sources */,
-				A60E52C61FEDFC8500953A46 /* LTSourceData.m in Sources */,
-				A624735C1FED11F700D3792C /* RunLoopContext.m in Sources */,
-				A62473601FED11F700D3792C /* LTRunLoopManager.m in Sources */,
+				A60E52E51FEE190600953A46 /* DataChecker.m in Sources */,
+				A60E52E11FEE190600953A46 /* RunLoopContext.m in Sources */,
+				A60E52E31FEE190600953A46 /* RunLoopSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
