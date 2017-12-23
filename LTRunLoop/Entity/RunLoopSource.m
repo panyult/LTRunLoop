@@ -6,7 +6,9 @@
 //
 
 #import "RunLoopSource.h"
-
+#import "DataChecker.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 @interface RunLoopSource()
     
 @property (nonatomic, assign) CFRunLoopSourceRef inputSource;
@@ -20,7 +22,7 @@
 #pragma mark - handler method declaration
     
 void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
-void RunLoopSourcePerformRoutine (void *info);
+void RunLoopSourcePerformRoutine (void *info,CFRunLoopRef rl, CFStringRef mode);
 void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
     
 #pragma mark - life cycle
@@ -36,7 +38,7 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
 
 - (void)setup
 {
-    CFRunLoopSourceContext    context = {0, (__bridge void *)self, NULL, NULL, NULL, NULL, NULL,
+    CFRunLoopSourceContext  context = {0, (__bridge void *)self, NULL, NULL, NULL, NULL, NULL,
         &RunLoopSourceScheduleRoutine,
         &RunLoopSourceCancelRoutine,
         &RunLoopSourcePerformRoutine};
@@ -53,14 +55,19 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
 
 #pragma mark -
 
-- (void)addPeddingData:(id)data
+- (void)addTask:(LTSourceTask *)task
 {
-    if (!data) {
+    if (!task || !task.peddingData) {
         return;
     }
     [self.dataLock lock];
-    [self.dataArray addObject:data];
+    [self.dataArray addObject:task];
     [self.dataLock unlock];
+}
+
+- (void)addPeddingData:(id)data
+{
+
 }
 
 - (void)fireCommandsOnRunLoop:(CFRunLoopRef)runloop
@@ -71,33 +78,56 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
 
 #pragma mark - run loop callback
 
-void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
+void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHandleType hadleType)
 {
-    NSLog(@"-- source will be scheduled to run loop-->");
-
+    RunLoopSource* source = (__bridge RunLoopSource*)info;
+    if (!source || ![DataChecker isArrayEmptyOrNil:source.dataArray]) {
+        return;
+    }
+    
+    LTSourceTask *task = source.dataArray.firstObject;
+    if (!task || ![task isKindOfClass:[LTSourceTask class]]) {
+        return;
+    }
+    
+    LTSourceData *data = [LTSourceData dataWithTask:task handlType:hadleType];
+    
+    if (task.sourceHandler && [task.sourceHandler respondsToSelector:@selector(object_runLoopSourceHandled:)]) {
+        
+        [task.sourceHandler object_runLoopSourceHandled:data];
+        
+    }
+    else if([DataChecker isStringEmptyOrNil:task.sourceHandlerClassName]) {
+        
+        Class handlerClass = NSClassFromString(task.sourceHandlerClassName);
+        
+        if (handlerClass && class_respondsToSelector(handlerClass, @selector(class_runLoopSourceHandled:))) {
+            
+            objc_msgSend(handlerClass,@selector(class_runLoopSourceHandled:),data);
+            
+        }
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLTRunLoopSourceHandleNotification object:data];
+    
+    [source.dataLock lock];
+    [source.dataArray removeObject:task];
+    [source.dataLock unlock];
 }
 
-void RunLoopSourcePerformRoutine (void *info)
+void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    RunLoopSource*  obj = (__bridge RunLoopSource*)info;
-    if (obj && obj.dataArray && obj.dataArray.count > 0) {
-        id data = obj.dataArray.firstObject;
-        if (data) {
-//            [TaskHandler handleData:data];
-//        TODO:lt use Notification to let  manager know something hanppened
-        }
-        
-        [obj.dataLock lock];
-        
-        [obj.dataArray removeObject:data];
-        
-        [obj.dataLock unlock];
-    }
+    handleSource(info,rl,mode,RunLoopSourceHandleTypeWillScheduled);
+}
+
+void RunLoopSourcePerformRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
+{
+    handleSource(info,rl,mode,RunLoopSourceHandleTypeHandled);
 }
 
 void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    NSLog(@"-- source will be Canceled -->");
+    handleSource(info,rl,mode,RunLoopSourceHandleTypeCanceled);
 }
 
 #pragma mark - getters and setters

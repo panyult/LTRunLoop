@@ -6,13 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LTSourceTask.h"
 
 @interface LTRunLoopManager : NSObject
 + (instancetype)manager;
 
-- (void)registerHandlerClassName:(NSString *)handlerClassName forDataClassName:(NSString *)dataClassName;
+- (void)addSourceTask:(LTSourceTask *)task;
 
-- (void)addPendingData:(id)data;
 - (void)start;
 
 

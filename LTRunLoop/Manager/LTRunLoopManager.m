@@ -122,7 +122,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
 
 #pragma mark - manage tasks
 
-- (void)addPendingData:(id)data
+- (void)addSourceTask:(LTSourceTask *)task
 {
     if (!self.runLoopContextArray || self.runLoopContextArray.count == 0) {
         return;
@@ -131,10 +131,9 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
     RunLoopContext *ctx = self.runLoopContextArray.firstObject;
     RunLoopSource *source = ctx.runLoopSource;
     
-    [source addPeddingData:data];
+    [source addTask:task];
     
     [source fireCommandsOnRunLoop:self.workerRunLoop];
 }
-
 
 @end

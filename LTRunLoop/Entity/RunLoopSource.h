@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LTSourceData.h"
 
 @interface RunLoopSource : NSObject
-    
+
 - (void)addToCurrentRunLoop;
     
-- (void)addPeddingData:(id)data;
+- (void)addTask:(LTSourceTask *)task;
     
 - (void)fireCommandsOnRunLoop:(CFRunLoopRef)runloop;
 
