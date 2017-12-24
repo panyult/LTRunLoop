@@ -9,18 +9,11 @@
 #define RunLoopSourceHandler_h
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger,RunLoopSourceHandleType) {
-    RunLoopSourceHandleTypeNotScheduled = 0,
-    RunLoopSourceHandleTypeWillScheduled,
-    RunLoopSourceHandleTypeHandled,
-    RunLoopSourceHandleTypeCanceled,
-};
+#import "LTSourceData.h"
 
 // A RunLoopSource instance is along with kLTRunLoopSourceHandleNotification, and the notif's object refers to it.
 static NSString *const kLTRunLoopSourceHandleNotification = @"kLTRunLoopSourceHandleNotification";
 
-@class LTSourceData;
 @protocol RunLoopSourceHandler<NSObject>
 @optional
 

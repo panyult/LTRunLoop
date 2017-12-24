@@ -31,6 +31,7 @@
                      orSourceHandlerClassName:(NSString *)sourceHandlerClassName
 {
     LTSourceTask *task = [[self alloc] init];
+    task.peddingData = data;
     task.sourceHandler = sourceHandler;
     task.sourceHandlerClassName = sourceHandlerClassName;
     return task;

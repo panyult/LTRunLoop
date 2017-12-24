@@ -6,16 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LTSourceTask.h"
+
+typedef NS_ENUM(NSUInteger,RunLoopSourceHandleType) {
+    RunLoopSourceHandleTypeNotScheduled = 0,
+    RunLoopSourceHandleTypeWillScheduled,
+    RunLoopSourceHandleTypeHandled,
+    RunLoopSourceHandleTypeCanceled,
+};
+
 
 @interface LTSourceData : NSObject
 /**
  default is RunLoopSourceHandleTypeNotScheduled
  */
-@property (nonatomic, assign) RunLoopSourceHandleType handlType;
+@property (nonatomic, assign) RunLoopSourceHandleType handleType;
 
 @property (nonatomic, strong) id peddingData;
-
-+ (instancetype)dataWithTask:(LTSourceTask *)task handlType:(RunLoopSourceHandleType)handlType;
 
 @end

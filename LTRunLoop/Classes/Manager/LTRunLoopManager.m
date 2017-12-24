@@ -95,7 +95,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
         switch (result) {
             case kCFRunLoopRunHandledSource:
             {
-                NSLog(@"-----> success to handle source,result code : %d",result);
+//                NSLog(@"-----> success to handle source,result code : %d",result);
                 break;
             }
             case kCFRunLoopRunStopped:

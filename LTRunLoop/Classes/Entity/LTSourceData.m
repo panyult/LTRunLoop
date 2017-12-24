@@ -9,12 +9,4 @@
 
 @implementation LTSourceData
 
-+ (instancetype)dataWithTask:(LTSourceTask *)task handlType:(RunLoopSourceHandleType)handlType
-{
-    LTSourceData *data = [[self alloc] init];
-    data.peddingData = task.peddingData;
-    data.handlType = handlType;
-    return data;
-}
-
 @end

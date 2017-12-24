@@ -9,6 +9,7 @@
 #import "LTSourceTask.h"
 
 @interface LTRunLoopManager : NSObject
+
 + (instancetype)manager;
 
 - (void)addSourceTask:(LTSourceTask *)task;

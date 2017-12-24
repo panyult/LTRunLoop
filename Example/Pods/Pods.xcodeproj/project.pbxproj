@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05B0ED411CE9F99D8DCD496BB612E807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		05B0ED411CE9F99D8DCD496BB612E807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CB3D5CDFEC3E84F8F29AB933EC4EC /* Foundation.framework */; };
+		11AAA1B5F32182D157988B872BA458D0 /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F339207CCC700687D9335E8FAA657C1C /* RunLoopContext.m */; };
+		19E504B4285AE251FC80F9B941DDA104 /* LTSourceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE374B0857B78F49147867EDF52AC3B /* LTSourceTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		214FE2220F67114A3F148FD3752D2DEF /* Pods-LTRunLoop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DC0CE50BC1C18C2C0D43CF58078380 /* Pods-LTRunLoop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		229644E05E8FAFEB9008F1379D4909E2 /* DataChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92D662D973904911A28C32C2AE3202 /* DataChecker.m */; };
 		29AAECE24C4882A0D62F87D18E96CA3C /* Pods-LTRunLoop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */; };
+		2E5B9710A5078A03C9A291E87DBBB00D /* LTSourceData.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A9A53CABC11CC1738CEB236AEAC160 /* LTSourceData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FD0B2659AF1516891E2C78A9061A4DC /* Pods-LTRunLoop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */; };
-		4022BA5B20CCAAC4D994F47A03E26CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4022BA5B20CCAAC4D994F47A03E26CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CB3D5CDFEC3E84F8F29AB933EC4EC /* Foundation.framework */; };
+		427773ECAA80789CDC523528708F3B96 /* RunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435A88DE4647DB8AADD35C8D5C496758 /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = EB93406DE2B22C63F55DE9705248F184 /* DataChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E15E29711DC70DD1DD3AFEC495A75F0 /* Pods-LTRunLoop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BCE5D4CC0FA3924488FE122B40E23BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A60E52DC1FEE190600953A46 /* LTSourceData.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52CC1FEE190600953A46 /* LTSourceData.h */; };
-		A60E52DD1FEE190600953A46 /* LTSourceData.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52CD1FEE190600953A46 /* LTSourceData.m */; };
-		A60E52DE1FEE190600953A46 /* LTSourceTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52CE1FEE190600953A46 /* LTSourceTask.h */; };
-		A60E52DF1FEE190600953A46 /* LTSourceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52CF1FEE190600953A46 /* LTSourceTask.m */; };
-		A60E52E01FEE190600953A46 /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D01FEE190600953A46 /* RunLoopContext.h */; };
-		A60E52E11FEE190600953A46 /* RunLoopContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D11FEE190600953A46 /* RunLoopContext.m */; };
-		A60E52E21FEE190600953A46 /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D21FEE190600953A46 /* RunLoopSource.h */; };
-		A60E52E31FEE190600953A46 /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D31FEE190600953A46 /* RunLoopSource.m */; };
-		A60E52E41FEE190600953A46 /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D51FEE190600953A46 /* DataChecker.h */; };
-		A60E52E51FEE190600953A46 /* DataChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52D61FEE190600953A46 /* DataChecker.m */; };
-		A60E52E61FEE190600953A46 /* LTRunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D71FEE190600953A46 /* LTRunLoop.h */; };
-		A60E52E71FEE190600953A46 /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52D91FEE190600953A46 /* LTRunLoopManager.h */; };
-		A60E52E81FEE190600953A46 /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */; };
-		A60E52E91FEE190600953A46 /* RunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */; };
-		FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */; };
+		58A3686F2C59F17BBCBE4B3E601E2869 /* LTSourceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B3723271E63C8679821C7AE8736591 /* LTSourceData.m */; };
+		62CF655299B7A14DAE8ECDC6E01DB193 /* LTSourceTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 4723047BF52AC85DA3CC969C27D19FEE /* LTSourceTask.m */; };
+		7A99AFC6F153FE07BBE7326036EF1843 /* LTRunLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 994599757A05A3108FA53C517C07F7F9 /* LTRunLoop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92219546663B64C8383C0C458037BF8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CB3D5CDFEC3E84F8F29AB933EC4EC /* Foundation.framework */; };
+		9B74737B3708CEE477A7317C42FAE89E /* LTRunLoop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 192975E78B1B34554F388C6B971C15E4 /* LTRunLoop-dummy.m */; };
+		AA1525F39599AD311768B778D683D4B0 /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDE55DCFDF745F85F9DBDC4CF312B16 /* RunLoopContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADB96A15661050CC98EC1D936999A45F /* LTRunLoop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 408115420DF4B3BB8A7ACA854493C909 /* LTRunLoop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8A65B5CEC8317FB6E92F4581282BE41 /* RunLoopSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B446FFE8B7ADDA9FCC3638FDCE0E93DC /* RunLoopSource.m */; };
+		B9B86E8778FF450FFB498F420609DBFC /* LTRunLoopManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EAF229170EC012F52D5AC99AC34CE215 /* LTRunLoopManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8C15BCBA0566A86A3833BF2CE69274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C9D9D043E88EDC9EEA08EF4794CAB0 /* UIKit.framework */; };
+		E107E209BE84CC26246B965FCF8FF616 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA9B7D5E3FCCC6CE4A79E131788AAEC /* CoreFoundation.framework */; };
+		EEEFD30A3BC1E2A06DD69CE1E7F504F9 /* RunLoopSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DE8C8C90B044A60B394D01B4866976CB /* RunLoopSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F184B1ABF2923AA197E9A429C4C008E9 /* LTRunLoopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A9644C6C0034C8C5D8A483C376500 /* LTRunLoopManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,65 +39,72 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 408B90C16CD2EFDD7A047332FD80EE41;
+			remoteGlobalIDString = 3C5890BB9E597FCE85288A9DFC2AE77E;
 			remoteInfo = LTRunLoop;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		034AA8153709ADD26E9CDE7A4E2FF933 /* LTRunLoop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTRunLoop.xcconfig; sourceTree = "<group>"; };
-		0461F2BBC843299905F5F38B9050DA01 /* LTRunLoop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTRunLoop.modulemap; sourceTree = "<group>"; };
+		05B3723271E63C8679821C7AE8736591 /* LTSourceData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTSourceData.m; sourceTree = "<group>"; };
 		09C2DE189DB913702BC8E3142D9A6BCF /* Pods-LTRunLoop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTRunLoop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		130DC00D908E3E174802498174149319 /* LTRunLoop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LTRunLoop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D7072AAED511FF2FF73FBF00D054CF /* Pods-LTRunLoop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LTRunLoop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		192975E78B1B34554F388C6B971C15E4 /* LTRunLoop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTRunLoop-dummy.m"; sourceTree = "<group>"; };
+		221B0656DECF0DFF33D113561065A6A9 /* LTRunLoop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LTRunLoop.modulemap; sourceTree = "<group>"; };
 		28FAC6293037EEBDD2B04D71A4BDB101 /* Pods-LTRunLoop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTRunLoop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		29CAFDF80E55593271A4DC60B60E5891 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3448E70CDE1E8BA2334BF07E00E2B83A /* Pods-LTRunLoop_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3DAC7C496F9C9585249ED10ABE559AC4 /* Pods-LTRunLoop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Tests.modulemap"; sourceTree = "<group>"; };
 		3EF24F2BB8781F3E7B61BCC74B99344A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-umbrella.h"; sourceTree = "<group>"; };
+		408115420DF4B3BB8A7ACA854493C909 /* LTRunLoop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-umbrella.h"; sourceTree = "<group>"; };
+		4723047BF52AC85DA3CC969C27D19FEE /* LTSourceTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTSourceTask.m; sourceTree = "<group>"; };
+		49331D520EAD5C448B391A89BE6C8D85 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		537CB3D5CDFEC3E84F8F29AB933EC4EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		56DC0CE50BC1C18C2C0D43CF58078380 /* Pods-LTRunLoop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTRunLoop_Example-umbrella.h"; sourceTree = "<group>"; };
 		57ED304144E149F607AB58A621EA5B7F /* Pods-LTRunLoop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LTRunLoop-dummy.m"; sourceTree = "<group>"; };
+		5C54C2F51A9FA1DB47B4B41E16CCCD46 /* LTRunLoop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = LTRunLoop.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		60717B990D3014C2862E850D04C0AD17 /* Pods-LTRunLoop_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Example-resources.sh"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6423956896AA8701E6E3A5A371E9A0D7 /* LTRunLoop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-prefix.pch"; sourceTree = "<group>"; };
+		6BA9B7D5E3FCCC6CE4A79E131788AAEC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		78012BB566822D848D4AB9F40E20E758 /* Pods-LTRunLoop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7B1E408F66F8C5C634133270133F47F3 /* Pods-LTRunLoop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LTRunLoop_Tests-umbrella.h"; sourceTree = "<group>"; };
 		859F4FC784FE38109E9E16B49B321C3D /* Pods-LTRunLoop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8B92D662D973904911A28C32C2AE3202 /* DataChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DataChecker.m; sourceTree = "<group>"; };
+		8C4D32DBE32A8AB6DC5C461DAA1E0B31 /* LTRunLoop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LTRunLoop.xcconfig; sourceTree = "<group>"; };
+		8F7A9644C6C0034C8C5D8A483C376500 /* LTRunLoopManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		969199A43083E0A30D2F3F442549CF46 /* Pods_LTRunLoop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTRunLoop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		994599757A05A3108FA53C517C07F7F9 /* LTRunLoop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LTRunLoop.h; path = LTRunLoop/Classes/LTRunLoop.h; sourceTree = "<group>"; };
 		9A16DDB6828FBD407614D5C927BE3FC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFC3155C8D02DFEC5000D118DE0AFF8 /* Pods-LTRunLoop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Tests-dummy.m"; sourceTree = "<group>"; };
-		A09D92F082AFF48679719E8AAB8AE8A2 /* LTRunLoop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LTRunLoop-prefix.pch"; sourceTree = "<group>"; };
-		A60E52CC1FEE190600953A46 /* LTSourceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSourceData.h; sourceTree = "<group>"; };
-		A60E52CD1FEE190600953A46 /* LTSourceData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSourceData.m; sourceTree = "<group>"; };
-		A60E52CE1FEE190600953A46 /* LTSourceTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSourceTask.h; sourceTree = "<group>"; };
-		A60E52CF1FEE190600953A46 /* LTSourceTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSourceTask.m; sourceTree = "<group>"; };
-		A60E52D01FEE190600953A46 /* RunLoopContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
-		A60E52D11FEE190600953A46 /* RunLoopContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
-		A60E52D21FEE190600953A46 /* RunLoopSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
-		A60E52D31FEE190600953A46 /* RunLoopSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
-		A60E52D51FEE190600953A46 /* DataChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataChecker.h; sourceTree = "<group>"; };
-		A60E52D61FEE190600953A46 /* DataChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataChecker.m; sourceTree = "<group>"; };
-		A60E52D71FEE190600953A46 /* LTRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoop.h; sourceTree = "<group>"; };
-		A60E52D91FEE190600953A46 /* LTRunLoopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
-		A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManager.m; sourceTree = "<group>"; };
-		A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
+		9EDE55DCFDF745F85F9DBDC4CF312B16 /* RunLoopContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RunLoopContext.h; sourceTree = "<group>"; };
 		AD94368801BCBCC95F21A8FA33EB10F4 /* Pods-LTRunLoop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LTRunLoop_Example-dummy.m"; sourceTree = "<group>"; };
+		B446FFE8B7ADDA9FCC3638FDCE0E93DC /* RunLoopSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RunLoopSource.m; sourceTree = "<group>"; };
 		B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0E1D334109FB401F443CB44567F9B /* Pods-LTRunLoop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LTRunLoop_Example.modulemap"; sourceTree = "<group>"; };
-		CD7BE3A45A7E543282A3E8BEC262CA80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C9D9D043E88EDC9EEA08EF4794CAB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D01D2F86621A4DB8960A41E62F10FCE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E81EFB66315FC307581E548BEE1AAD /* Pods-LTRunLoop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LTRunLoop_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
+		DE8C8C90B044A60B394D01B4866976CB /* RunLoopSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RunLoopSource.h; sourceTree = "<group>"; };
+		EAF229170EC012F52D5AC99AC34CE215 /* LTRunLoopManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTRunLoopManager.h; sourceTree = "<group>"; };
+		EB93406DE2B22C63F55DE9705248F184 /* DataChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DataChecker.h; sourceTree = "<group>"; };
+		EBE374B0857B78F49147867EDF52AC3B /* LTSourceTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTSourceTask.h; sourceTree = "<group>"; };
 		EE21BD0FB96596AA8BC71E7E977EFEE0 /* Pods_LTRunLoop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTRunLoop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F339207CCC700687D9335E8FAA657C1C /* RunLoopContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RunLoopContext.m; sourceTree = "<group>"; };
+		F6A9A53CABC11CC1738CEB236AEAC160 /* LTSourceData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTSourceData.h; sourceTree = "<group>"; };
 		F9A0E7DC9AE470655D4050C3F1316EFB /* Pods-LTRunLoop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LTRunLoop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FAAED338EFA312F6A462D885BF423702 /* Pods-LTRunLoop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LTRunLoop_Tests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76F68ACE0BEDE9BD61ED7D4177E6D4AE /* Frameworks */ = {
+		967FA8E7A765B77643137DE2FD2BBB02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCE5D4CC0FA3924488FE122B40E23BC /* Foundation.framework in Frameworks */,
+				E107E209BE84CC26246B965FCF8FF616 /* CoreFoundation.framework in Frameworks */,
+				92219546663B64C8383C0C458037BF8A /* Foundation.framework in Frameworks */,
+				CB8C15BCBA0566A86A3833BF2CE69274 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +127,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C0A9ED5904F94424870B1DA020174CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D01D2F86621A4DB8960A41E62F10FCE5 /* Info.plist */,
+				221B0656DECF0DFF33D113561065A6A9 /* LTRunLoop.modulemap */,
+				8C4D32DBE32A8AB6DC5C461DAA1E0B31 /* LTRunLoop.xcconfig */,
+				192975E78B1B34554F388C6B971C15E4 /* LTRunLoop-dummy.m */,
+				6423956896AA8701E6E3A5A371E9A0D7 /* LTRunLoop-prefix.pch */,
+				408115420DF4B3BB8A7ACA854493C909 /* LTRunLoop-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LTRunLoop";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63B3CC79972520217D789492073FC37D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36A74D74AFA25662EB43A832858C6D91 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,12 +176,48 @@
 			path = "Target Support Files/Pods-LTRunLoop_Example";
 			sourceTree = "<group>";
 		};
+		63B3CC79972520217D789492073FC37D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6BA9B7D5E3FCCC6CE4A79E131788AAEC /* CoreFoundation.framework */,
+				537CB3D5CDFEC3E84F8F29AB933EC4EC /* Foundation.framework */,
+				C0C9D9D043E88EDC9EEA08EF4794CAB0 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6E6041A5883742BE8598619D09EBC064 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				49331D520EAD5C448B391A89BE6C8D85 /* LICENSE */,
+				5C54C2F51A9FA1DB47B4B41E16CCCD46 /* LTRunLoop.podspec */,
+				29CAFDF80E55593271A4DC60B60E5891 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		78D1D1FA57E9A8054E41F5B51B821569 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F6A9A53CABC11CC1738CEB236AEAC160 /* LTSourceData.h */,
+				05B3723271E63C8679821C7AE8736591 /* LTSourceData.m */,
+				EBE374B0857B78F49147867EDF52AC3B /* LTSourceTask.h */,
+				4723047BF52AC85DA3CC969C27D19FEE /* LTSourceTask.m */,
+				9EDE55DCFDF745F85F9DBDC4CF312B16 /* RunLoopContext.h */,
+				F339207CCC700687D9335E8FAA657C1C /* RunLoopContext.m */,
+				DE8C8C90B044A60B394D01B4866976CB /* RunLoopSource.h */,
+				B446FFE8B7ADDA9FCC3638FDCE0E93DC /* RunLoopSource.m */,
+			);
+			name = Entity;
+			path = LTRunLoop/Classes/Entity;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E4A12C6ECE4FCC80736FB99BDD51548A /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C8284727C8BA97787A1D106D144481F2 /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				A2127F8126CFFEE99E0B5BDB974D6AAC /* Products */,
 				36A74D74AFA25662EB43A832858C6D91 /* Targets Support Files */,
 			);
@@ -166,82 +233,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A60E52C91FEE190600953A46 /* Classes */ = {
+		ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				A60E52D71FEE190600953A46 /* LTRunLoop.h */,
-				A60E52CB1FEE190600953A46 /* Entity */,
-				A60E52D41FEE190600953A46 /* Helper */,
-				A60E52D81FEE190600953A46 /* Manager */,
+				EAF229170EC012F52D5AC99AC34CE215 /* LTRunLoopManager.h */,
+				8F7A9644C6C0034C8C5D8A483C376500 /* LTRunLoopManager.m */,
+				DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */,
 			);
-			name = Classes;
-			path = LTRunLoop/Classes;
+			name = Manager;
+			path = LTRunLoop/Classes/Manager;
 			sourceTree = "<group>";
 		};
-		A60E52CB1FEE190600953A46 /* Entity */ = {
+		C8284727C8BA97787A1D106D144481F2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A60E52CC1FEE190600953A46 /* LTSourceData.h */,
-				A60E52CD1FEE190600953A46 /* LTSourceData.m */,
-				A60E52CE1FEE190600953A46 /* LTSourceTask.h */,
-				A60E52CF1FEE190600953A46 /* LTSourceTask.m */,
-				A60E52D01FEE190600953A46 /* RunLoopContext.h */,
-				A60E52D11FEE190600953A46 /* RunLoopContext.m */,
-				A60E52D21FEE190600953A46 /* RunLoopSource.h */,
-				A60E52D31FEE190600953A46 /* RunLoopSource.m */,
+				DDC4D67848B5D355897F0EEBA62F493D /* LTRunLoop */,
 			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		A60E52D41FEE190600953A46 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				A60E52D51FEE190600953A46 /* DataChecker.h */,
-				A60E52D61FEE190600953A46 /* DataChecker.m */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		A60E52D81FEE190600953A46 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				A60E52D91FEE190600953A46 /* LTRunLoopManager.h */,
-				A60E52DA1FEE190600953A46 /* LTRunLoopManager.m */,
-				A60E52DB1FEE190600953A46 /* RunLoopSourceHandler.h */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD7BE3A45A7E543282A3E8BEC262CA80 /* Info.plist */,
-				0461F2BBC843299905F5F38B9050DA01 /* LTRunLoop.modulemap */,
-				034AA8153709ADD26E9CDE7A4E2FF933 /* LTRunLoop.xcconfig */,
-				5D17952E322726DC47D9A1F751FBEE07 /* LTRunLoop-dummy.m */,
-				A09D92F082AFF48679719E8AAB8AE8A2 /* LTRunLoop-prefix.pch */,
-				4EDD0B740748B328FCB3EDA168A7B739 /* LTRunLoop-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LTRunLoop";
-			sourceTree = "<group>";
-		};
-		B8C6242A0FEA08C8A7C69CBA9A40E28A /* LTRunLoop */ = {
-			isa = PBXGroup;
-			children = (
-				A60E52C91FEE190600953A46 /* Classes */,
-				B00C7BD81FBDF1EA506FD948A93EF22B /* Support Files */,
-			);
-			name = LTRunLoop;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CE20E1C113E7D9A2357C9242EDDADA75 /* Pods-LTRunLoop_Tests */ = {
@@ -262,38 +270,46 @@
 			path = "Target Support Files/Pods-LTRunLoop_Tests";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		DDC4D67848B5D355897F0EEBA62F493D /* LTRunLoop */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				994599757A05A3108FA53C517C07F7F9 /* LTRunLoop.h */,
+				ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */,
+				78D1D1FA57E9A8054E41F5B51B821569 /* Entity */,
+				E133724085046649B2E347E730E1FEC2 /* Helper */,
+				6E6041A5883742BE8598619D09EBC064 /* Pod */,
+				0C0A9ED5904F94424870B1DA020174CF /* Support Files */,
 			);
-			name = iOS;
+			name = LTRunLoop;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		E4A12C6ECE4FCC80736FB99BDD51548A /* Development Pods */ = {
+		E133724085046649B2E347E730E1FEC2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B8C6242A0FEA08C8A7C69CBA9A40E28A /* LTRunLoop */,
+				EB93406DE2B22C63F55DE9705248F184 /* DataChecker.h */,
+				8B92D662D973904911A28C32C2AE3202 /* DataChecker.m */,
 			);
-			name = "Development Pods";
+			name = Helper;
+			path = LTRunLoop/Classes/Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		87791388D00CF927D59EB79F0E35CEFD /* Headers */ = {
+		19BBB3F85DE9946D7D8EE3D06F3F6342 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60E52E61FEE190600953A46 /* LTRunLoop.h in Headers */,
-				A60E52E41FEE190600953A46 /* DataChecker.h in Headers */,
-				A60E52E71FEE190600953A46 /* LTRunLoopManager.h in Headers */,
-				A60E52E91FEE190600953A46 /* RunLoopSourceHandler.h in Headers */,
-				9DDE8A8F17D4A49ABA837C30708A470A /* LTRunLoop-umbrella.h in Headers */,
-				A60E52DC1FEE190600953A46 /* LTSourceData.h in Headers */,
-				A60E52E01FEE190600953A46 /* RunLoopContext.h in Headers */,
-				A60E52DE1FEE190600953A46 /* LTSourceTask.h in Headers */,
-				A60E52E21FEE190600953A46 /* RunLoopSource.h in Headers */,
+				435A88DE4647DB8AADD35C8D5C496758 /* DataChecker.h in Headers */,
+				ADB96A15661050CC98EC1D936999A45F /* LTRunLoop-umbrella.h in Headers */,
+				7A99AFC6F153FE07BBE7326036EF1843 /* LTRunLoop.h in Headers */,
+				B9B86E8778FF450FFB498F420609DBFC /* LTRunLoopManager.h in Headers */,
+				2E5B9710A5078A03C9A291E87DBBB00D /* LTSourceData.h in Headers */,
+				19E504B4285AE251FC80F9B941DDA104 /* LTSourceTask.h in Headers */,
+				AA1525F39599AD311768B778D683D4B0 /* RunLoopContext.h in Headers */,
+				EEEFD30A3BC1E2A06DD69CE1E7F504F9 /* RunLoopSource.h in Headers */,
+				427773ECAA80789CDC523528708F3B96 /* RunLoopSourceHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,13 +332,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		408B90C16CD2EFDD7A047332FD80EE41 /* LTRunLoop */ = {
+		3C5890BB9E597FCE85288A9DFC2AE77E /* LTRunLoop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A109C7C292A08583ACCF69AEE7A14564 /* Build configuration list for PBXNativeTarget "LTRunLoop" */;
+			buildConfigurationList = 7FC11A68AF84F8CBF87805E17E32087D /* Build configuration list for PBXNativeTarget "LTRunLoop" */;
 			buildPhases = (
-				67A91FFE6E838B8B498EB44B7545BC80 /* Sources */,
-				76F68ACE0BEDE9BD61ED7D4177E6D4AE /* Frameworks */,
-				87791388D00CF927D59EB79F0E35CEFD /* Headers */,
+				BF416B0AA040A603C7F235C750FB630B /* Sources */,
+				967FA8E7A765B77643137DE2FD2BBB02 /* Frameworks */,
+				19BBB3F85DE9946D7D8EE3D06F3F6342 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -389,7 +405,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				408B90C16CD2EFDD7A047332FD80EE41 /* LTRunLoop */,
+				3C5890BB9E597FCE85288A9DFC2AE77E /* LTRunLoop */,
 				C31067032417EF4C0A71A5D9DE15CC12 /* Pods-LTRunLoop_Example */,
 				AA856BD4E1882FEFBAF02199E99F10C7 /* Pods-LTRunLoop_Tests */,
 			);
@@ -405,25 +421,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67A91FFE6E838B8B498EB44B7545BC80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A60E52DF1FEE190600953A46 /* LTSourceTask.m in Sources */,
-				A60E52E81FEE190600953A46 /* LTRunLoopManager.m in Sources */,
-				A60E52DD1FEE190600953A46 /* LTSourceData.m in Sources */,
-				FE6D6F374770C789B8AFB02C6662FE8A /* LTRunLoop-dummy.m in Sources */,
-				A60E52E51FEE190600953A46 /* DataChecker.m in Sources */,
-				A60E52E11FEE190600953A46 /* RunLoopContext.m in Sources */,
-				A60E52E31FEE190600953A46 /* RunLoopSource.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EABAD929F4E81C85F23CEF32503EC4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				29AAECE24C4882A0D62F87D18E96CA3C /* Pods-LTRunLoop_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF416B0AA040A603C7F235C750FB630B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229644E05E8FAFEB9008F1379D4909E2 /* DataChecker.m in Sources */,
+				9B74737B3708CEE477A7317C42FAE89E /* LTRunLoop-dummy.m in Sources */,
+				F184B1ABF2923AA197E9A429C4C008E9 /* LTRunLoopManager.m in Sources */,
+				58A3686F2C59F17BBCBE4B3E601E2869 /* LTSourceData.m in Sources */,
+				62CF655299B7A14DAE8ECDC6E01DB193 /* LTSourceTask.m in Sources */,
+				11AAA1B5F32182D157988B872BA458D0 /* RunLoopContext.m in Sources */,
+				B8A65B5CEC8317FB6E92F4581282BE41 /* RunLoopSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,73 +449,13 @@
 		692D9E5D7B21EC7244048B00B5C16AD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LTRunLoop;
-			target = 408B90C16CD2EFDD7A047332FD80EE41 /* LTRunLoop */;
+			target = 3C5890BB9E597FCE85288A9DFC2AE77E /* LTRunLoop */;
 			targetProxy = 99497B6371B259D7F8E8E3B55257A452 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		5741DFFD9F691B1D6384125E4C65D641 /* Debug */ = {
+		33E815A3CC65B14109F4E427ECF4006E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78012BB566822D848D4AB9F40E20E758 /* Pods-LTRunLoop_Example.debug.xcconfig */;
 			buildSettings = {
@@ -514,7 +470,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Example/Pods-LTRunLoop_Example.modulemap";
@@ -531,9 +487,9 @@
 			};
 			name = Debug;
 		};
-		65A0EEDE316E72AF3902DD03A90C4E9E /* Debug */ = {
+		369E7BA57F07033643F270FB27A87559 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 034AA8153709ADD26E9CDE7A4E2FF933 /* LTRunLoop.xcconfig */;
+			baseConfigurationReference = 8C4D32DBE32A8AB6DC5C461DAA1E0B31 /* LTRunLoop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -544,7 +500,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/LTRunLoop/LTRunLoop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LTRunLoop/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -556,12 +511,46 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+		4F215087B633D5D5B7D2A9DB591F9014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E81EFB66315FC307581E548BEE1AAD /* Pods-LTRunLoop_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Example/Pods-LTRunLoop_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTRunLoop_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -594,7 +583,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -607,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -616,73 +605,7 @@
 			};
 			name = Release;
 		};
-		7C01ADDEE52CF1349A95D2F7EB939DC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57ED304144E149F607AB58A621EA5B7F /* Pods-LTRunLoop_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Pods-LTRunLoop_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTRunLoop_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CDB81DEE99F2229D4726CCF99B489F72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2E81EFB66315FC307581E548BEE1AAD /* Pods-LTRunLoop_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Example/Pods-LTRunLoop_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LTRunLoop_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EB9A381985130F9E0B66D6D99003A8B1 /* Debug */ = {
+		D87D805BACBA590B4FFE752C1B07E702 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -697,7 +620,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Pods-LTRunLoop_Tests.modulemap";
@@ -714,9 +637,9 @@
 			};
 			name = Debug;
 		};
-		FB4C11EF4BC9CC05FC1FC34070B708E4 /* Release */ = {
+		DFD91DF6C4D74D7361010EC8CDE7EB8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 034AA8153709ADD26E9CDE7A4E2FF933 /* LTRunLoop.xcconfig */;
+			baseConfigurationReference = 8C4D32DBE32A8AB6DC5C461DAA1E0B31 /* LTRunLoop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -727,7 +650,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/LTRunLoop/LTRunLoop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LTRunLoop/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -738,6 +660,98 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F5C709F49CDDCA03F46B7A4FDC7AD4F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57ED304144E149F607AB58A621EA5B7F /* Pods-LTRunLoop_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LTRunLoop_Tests/Pods-LTRunLoop_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LTRunLoop_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -751,8 +765,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
-				731DC216E1A58545B559F6E0A2418060 /* Release */,
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -760,8 +774,17 @@
 		4E82ECA9BA86F67F8539F29DD41C04DF /* Build configuration list for PBXNativeTarget "Pods-LTRunLoop_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB9A381985130F9E0B66D6D99003A8B1 /* Debug */,
-				7C01ADDEE52CF1349A95D2F7EB939DC7 /* Release */,
+				D87D805BACBA590B4FFE752C1B07E702 /* Debug */,
+				F5C709F49CDDCA03F46B7A4FDC7AD4F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FC11A68AF84F8CBF87805E17E32087D /* Build configuration list for PBXNativeTarget "LTRunLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD91DF6C4D74D7361010EC8CDE7EB8D /* Debug */,
+				369E7BA57F07033643F270FB27A87559 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -769,17 +792,8 @@
 		86A6F5494CB797667CBD06F728674D7B /* Build configuration list for PBXNativeTarget "Pods-LTRunLoop_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5741DFFD9F691B1D6384125E4C65D641 /* Debug */,
-				CDB81DEE99F2229D4726CCF99B489F72 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A109C7C292A08583ACCF69AEE7A14564 /* Build configuration list for PBXNativeTarget "LTRunLoop" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65A0EEDE316E72AF3902DD03A90C4E9E /* Debug */,
-				FB4C11EF4BC9CC05FC1FC34070B708E4 /* Release */,
+				33E815A3CC65B14109F4E427ECF4006E /* Debug */,
+				4F215087B633D5D5B7D2A9DB591F9014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

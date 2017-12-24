@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RunLoopSourceHandler.h"
-
+@class LTSourceTask;
 @interface LTSourceTask : NSObject
 
 /**
@@ -34,6 +34,5 @@
 
 + (instancetype)getASourceTaskWithPeddingData:(id)data
                      sourceHandlerClassName:(NSString *)sourceHandlerClassName;
-
 
 @end

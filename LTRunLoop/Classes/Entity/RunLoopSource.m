@@ -9,6 +9,7 @@
 #import "DataChecker.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+
 @interface RunLoopSource()
     
 @property (nonatomic, assign) CFRunLoopSourceRef inputSource;
@@ -65,9 +66,11 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
     [self.dataLock unlock];
 }
 
-- (void)addPeddingData:(id)data
+- (void)removeTask:(LTSourceTask *)task
 {
-
+    [self.dataLock lock];
+    [self.dataArray removeObject:task];
+    [self.dataLock unlock];
 }
 
 - (void)fireCommandsOnRunLoop:(CFRunLoopRef)runloop
@@ -78,20 +81,8 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
 
 #pragma mark - run loop callback
 
-void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHandleType hadleType)
+void handleDataAccordingTask(LTSourceData *data, LTSourceTask *task)
 {
-    RunLoopSource* source = (__bridge RunLoopSource*)info;
-    if (!source || ![DataChecker isArrayEmptyOrNil:source.dataArray]) {
-        return;
-    }
-    
-    LTSourceTask *task = source.dataArray.firstObject;
-    if (!task || ![task isKindOfClass:[LTSourceTask class]]) {
-        return;
-    }
-    
-    LTSourceData *data = [LTSourceData dataWithTask:task handlType:hadleType];
-    
     if (task.sourceHandler && [task.sourceHandler respondsToSelector:@selector(object_runLoopSourceHandled:)]) {
         
         [task.sourceHandler object_runLoopSourceHandled:data];
@@ -107,11 +98,31 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
         }
     }
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLTRunLoopSourceHandleNotification object:data];
+}
+
+void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHandleType handleType)
+{
+    RunLoopSource* source = (__bridge RunLoopSource*)info;
     
-    [source.dataLock lock];
-    [source.dataArray removeObject:task];
-    [source.dataLock unlock];
+    LTSourceData *data = [[LTSourceData alloc] init];
+    data.handleType = handleType;
+    
+    if (source && ![DataChecker isArrayEmptyOrNil:source.dataArray]) {
+        
+        LTSourceTask *task = source.dataArray.firstObject;
+        
+        if (task && [task isKindOfClass:[LTSourceTask class]]) {
+            
+            data.peddingData = task.peddingData;
+            
+            handleDataAccordingTask(data, task);
+        }
+        
+        [source removeTask:task];
+    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLTRunLoopSourceHandleNotification object:data];
+
 }
 
 void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
