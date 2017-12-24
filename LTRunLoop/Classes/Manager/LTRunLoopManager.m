@@ -90,7 +90,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
     
     do
     {
-        SInt32 result = CFRunLoopRunInMode(kCFRunLoopDefaultMode, 10, YES);
+        int result = CFRunLoopRunInMode(kCFRunLoopDefaultMode, 10, YES);
         
         switch (result) {
             case kCFRunLoopRunHandledSource:

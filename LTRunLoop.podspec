@@ -9,8 +9,8 @@ s.author           = { 'panyult' => 'litaoxiwang@163.com' }
 s.source           = { :git => 'https://github.com/panyult/LTRunLoop.git', :tag => s.version }
 s.platform         = :ios, '8.0'
 s.requires_arc     = true
-s.source_files     = 'Pod/LTRunLoop/**/*.{h,m}'
-s.frameworks       = 'UIKit,Foundation,CoreFoundation'
+s.source_files     = 'LTRunLoop/**/*.{h,m}'
+s.frameworks       = 'UIKit', 'Foundation', 'CoreFoundation'
 
 end
 
