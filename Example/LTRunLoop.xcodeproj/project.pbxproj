@@ -250,9 +250,6 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = panyult;
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = 2AC57UFDP2;
-					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -536,7 +533,7 @@
 			baseConfigurationReference = 20D36676840710F7575F0D2A /* Pods-LTRunLoop_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2AC57UFDP2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTRunLoop/LTRunLoop-Prefix.pch";
@@ -555,7 +552,7 @@
 			baseConfigurationReference = DB736ADAE89F24469E49A1FF /* Pods-LTRunLoop_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2AC57UFDP2;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LTRunLoop/LTRunLoop-Prefix.pch";
