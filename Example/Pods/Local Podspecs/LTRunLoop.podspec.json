@@ -1,6 +1,6 @@
 {
   "name": "LTRunLoop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "LTRunLoop help you to define self-define input source when you want use the run loop of a secondary thread to handle something for you.",
   "homepage": "https://github.com/panyult/LTRunLoop",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/panyult/LTRunLoop.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

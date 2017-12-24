@@ -1,5 +1,5 @@
 PODS:
-  - LTRunLoop (0.1.0)
+  - LTRunLoop (0.1.1)
 
 DEPENDENCIES:
   - LTRunLoop (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LTRunLoop: 4063aa31b6beafc37efe7500d0ccdf9788eda70c
+  LTRunLoop: 81f3fdcf45e1ea138ede7ced71a798f54fb34bb2
 
 PODFILE CHECKSUM: ea01666ac9af885ee45536b8c3bedbfeeeb08d4d
 

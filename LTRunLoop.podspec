@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'LTRunLoop'
-s.version          = '0.1.0'
+s.version          = '0.1.1'
 s.summary          = 'LTRunLoop help you to define self-define input source when you want use the run loop of a secondary thread to handle something for you.'
 s.homepage         = 'https://github.com/panyult/LTRunLoop'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
