@@ -88,7 +88,7 @@ void handleDataAccordingTask(LTSourceData *data, LTSourceTask *task)
         [task.sourceHandler object_runLoopSourceHandled:data];
         
     }
-    else if([DataChecker isStringEmptyOrNil:task.sourceHandlerClassName]) {
+    else if(![DataChecker isStringEmptyOrNil:task.sourceHandlerClassName]) {
         
         Class handlerClass = NSClassFromString(task.sourceHandlerClassName);
         
