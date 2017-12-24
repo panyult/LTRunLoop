@@ -29,10 +29,10 @@
  */
 @property (nonatomic, copy  ) NSString *sourceHandlerClassName;
 
-+ (instancetype)getASourceTaskWithPeddingData:(id)data
++ (instancetype)sourceTaskWithPeddingData:(id)data
                                 sourceHandler:(id<RunLoopSourceHandler>)sourceHandler;
 
-+ (instancetype)getASourceTaskWithPeddingData:(id)data
++ (instancetype)sourceTaskWithPeddingData:(id)data
                      sourceHandlerClassName:(NSString *)sourceHandlerClassName;
 
 @end

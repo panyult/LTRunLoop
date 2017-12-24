@@ -20,14 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tipLabel];
-
-    [[LTRunLoopManager manager] start];
     
+    [[LTRunLoopManager manager] start];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    LTSourceTask *task = [LTSourceTask getASourceTaskWithPeddingData:[NSString stringWithFormat:@"success test send a LTRunLoopTask\n%d",++self.count] sourceHandler:self];
+    LTSourceTask *task = [LTSourceTask sourceTaskWithPeddingData:[NSString stringWithFormat:@"success test send a LTRunLoopTask\n%d",++self.count] sourceHandler:self];
+
     [[LTRunLoopManager manager] addSourceTask:task];
 }
 

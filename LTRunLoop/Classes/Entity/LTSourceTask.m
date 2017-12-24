@@ -14,19 +14,19 @@
 @implementation LTSourceTask
 #pragma mark - life cycle
 
-+ (instancetype)getASourceTaskWithPeddingData:(id)data
++ (instancetype)sourceTaskWithPeddingData:(id)data
                                 sourceHandler:(id<RunLoopSourceHandler>)sourceHandler
 {
-    return [self getASourceTaskWithPeddingData:data sourceHandler:sourceHandler orSourceHandlerClassName:nil];
+    return [self sourceTaskWithPeddingData:data sourceHandler:sourceHandler orSourceHandlerClassName:nil];
 }
 
-+ (instancetype)getASourceTaskWithPeddingData:(id)data
++ (instancetype)sourceTaskWithPeddingData:(id)data
                      sourceHandlerClassName:(NSString *)sourceHandlerClassName
 {
-    return [self getASourceTaskWithPeddingData:data sourceHandler:nil orSourceHandlerClassName:sourceHandlerClassName];
+    return [self sourceTaskWithPeddingData:data sourceHandler:nil orSourceHandlerClassName:sourceHandlerClassName];
 }
 
-+ (instancetype)getASourceTaskWithPeddingData:(id)data
++ (instancetype)sourceTaskWithPeddingData:(id)data
                                 sourceHandler:(id<RunLoopSourceHandler>)sourceHandler
                      orSourceHandlerClassName:(NSString *)sourceHandlerClassName
 {
