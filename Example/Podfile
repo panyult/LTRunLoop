@@ -7,7 +7,7 @@ target 'LTRunLoop_Example' do
 
   target 'LTRunLoop_Tests' do
     inherit! :search_paths
+    pod 'Kiwi'
 
-    
   end
 end

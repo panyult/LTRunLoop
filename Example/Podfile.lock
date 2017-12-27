@@ -1,7 +1,9 @@
 PODS:
+  - Kiwi (2.4.0)
   - LTRunLoop (0.1.1)
 
 DEPENDENCIES:
+  - Kiwi
   - LTRunLoop (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   LTRunLoop: 81f3fdcf45e1ea138ede7ced71a798f54fb34bb2
 
-PODFILE CHECKSUM: ea01666ac9af885ee45536b8c3bedbfeeeb08d4d
+PODFILE CHECKSUM: 79755d10455b306a935eb7b1ef6ac5a2d63c3087
 
 COCOAPODS: 1.4.0.rc.1

@@ -9,13 +9,15 @@ Using **LTRunLoop** you can just deliver your pending data,which needs to be han
 
 ## Quick Start
 
-###1.Start the manager.
+
+### 1.Start the manager.
 
 ```ObjC
     [[LTRunLoopManager manager] start];
 ```
 
-###2.Add a task to manager and declare who will handle the task's data.
+### 2.Add a task to manager and declare who will handle the task's data.
+
 
 ***Using an object to handle the data***
 
@@ -44,8 +46,7 @@ Using **LTRunLoop** you can just deliver your pending data,which needs to be han
     
 ```
 
-
-###3.handle the data dispatched by the run loop of a secondary
+### 3.handle the data dispatched by the run loop of a secondary
 
 ***`RunLoopSourceHandler.h` declare two methods as follow:***
 
