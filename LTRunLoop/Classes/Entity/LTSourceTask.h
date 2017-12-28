@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "RunLoopSourceHandler.h"
 @class LTSourceTask;
+
 @interface LTSourceTask : NSObject
 
 /**
@@ -29,10 +30,15 @@
  */
 @property (nonatomic, copy  ) NSString *sourceHandlerClassName;
 
+@property (nonatomic, copy  ) SourceTaskCompletonBlock completionBlock;
+
 + (instancetype)sourceTaskWithPeddingData:(id)data
                                 sourceHandler:(id<RunLoopSourceHandler>)sourceHandler;
 
 + (instancetype)sourceTaskWithPeddingData:(id)data
                      sourceHandlerClassName:(NSString *)sourceHandlerClassName;
 
++ (instancetype)sourceTaskWithPeddingData:(id)data
+                   sourceHandlerClassName:(NSString *)sourceHandlerClassName
+                               completion:(SourceTaskCompletonBlock)completion;
 @end

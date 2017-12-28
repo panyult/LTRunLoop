@@ -95,6 +95,7 @@ void handleDataAccordingTask(LTSourceData *data, LTSourceTask *task)
         if (handlerClass && class_conformsToProtocol(handlerClass, @protocol(RunLoopSourceHandler))) {
             
             [[handlerClass class] performSelector:@selector(class_runLoopSourceHandled:) withObject:data];
+            
         }
     }
     
@@ -106,7 +107,6 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
     
     LTSourceData *data = [[LTSourceData alloc] init];
     data.handleType = handleType;
-    
     if (source && ![DataChecker isArrayEmptyOrNil:source.dataArray]) {
         
         LTSourceTask *task = source.dataArray.firstObject;
@@ -114,7 +114,8 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
         if (task && [task isKindOfClass:[LTSourceTask class]]) {
             
             data.peddingData = task.peddingData;
-            
+            data.completionBlock = task.completionBlock;
+
             handleDataAccordingTask(data, task);
         }
         
