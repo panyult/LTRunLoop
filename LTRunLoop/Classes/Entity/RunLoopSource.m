@@ -114,9 +114,13 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
         if (task && [task isKindOfClass:[LTSourceTask class]]) {
             
             data.peddingData = task.peddingData;
-            data.completionBlock = task.completionBlock;
 
             handleDataAccordingTask(data, task);
+            
+            if (task.completionBlock) {
+                task.completionBlock(data);
+            }
+
         }
         
         [source removeTask:task];

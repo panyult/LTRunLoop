@@ -15,7 +15,6 @@ typedef NS_ENUM(NSUInteger,RunLoopSourceHandleType) {
 };
 
 @class LTSourceData;
-typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
 
 @interface LTSourceData : NSObject
 /**
@@ -24,7 +23,5 @@ typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
 @property (nonatomic, assign) RunLoopSourceHandleType handleType;
 
 @property (nonatomic, strong) id peddingData;
-
-@property (nonatomic, copy  ) SourceTaskCompletonBlock completionBlock;
 
 @end

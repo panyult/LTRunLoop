@@ -19,9 +19,7 @@
 + (void)class_runLoopSourceHandled:(LTSourceData *)sourceData
 {
     NSLog(@"---class_handler recieve data from the secondary thread : %@ ----data is --->%@",[NSThread currentThread],sourceData.peddingData);
-    if (sourceData.completionBlock) {
-        sourceData.completionBlock(sourceData);
-    }
+
 }
 
 

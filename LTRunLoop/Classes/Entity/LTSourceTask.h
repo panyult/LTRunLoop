@@ -9,6 +9,8 @@
 #import "RunLoopSourceHandler.h"
 @class LTSourceTask;
 
+typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
+
 @interface LTSourceTask : NSObject
 
 /**
