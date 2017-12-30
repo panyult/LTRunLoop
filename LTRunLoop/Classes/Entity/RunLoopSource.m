@@ -22,9 +22,9 @@
 
 #pragma mark - handler method declaration
     
-void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
-void RunLoopSourcePerformRoutine (void *info);
-void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
+void LTRunLoopSourceScheduledCallBack (void *info, CFRunLoopRef rl, CFStringRef mode);
+void LTRunLoopSourceHandlerCallBack (void *info);
+void LTRunLoopSourceCancelCallBack (void *info, CFRunLoopRef rl, CFStringRef mode);
     
 #pragma mark - life cycle
     
@@ -40,9 +40,9 @@ void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode);
 - (void)setup
 {
     CFRunLoopSourceContext  context = {0, (__bridge void *)self, NULL, NULL, NULL, NULL, NULL,
-        &RunLoopSourceScheduleRoutine,
-        &RunLoopSourceCancelRoutine,
-        &RunLoopSourcePerformRoutine};
+        &LTRunLoopSourceScheduledCallBack,
+        &LTRunLoopSourceCancelCallBack,
+        &LTRunLoopSourceHandlerCallBack };
     
     _inputSource = CFRunLoopSourceCreate(NULL, 0, &context);
     _dataArray = [[NSMutableArray alloc] init];
@@ -101,7 +101,7 @@ void handleDataAccordingTask(LTSourceData *data, LTSourceTask *task)
     
 }
 
-void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHandleType handleType)
+void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,LTRunLoopSourceHandleType handleType)
 {
     RunLoopSource* source = (__bridge RunLoopSource*)info;
     
@@ -130,19 +130,19 @@ void handleSource(void *info, CFRunLoopRef rl, CFStringRef mode,RunLoopSourceHan
 
 }
 
-void RunLoopSourceScheduleRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
+void LTRunLoopSourceScheduledCallBack (void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    handleSource(info,rl,mode,RunLoopSourceHandleTypeWillScheduled);
+    handleSource(info,rl,mode,LTRunLoopSourceHandleTypeScheduled);
 }
 
-void RunLoopSourcePerformRoutine (void *info)
+void LTRunLoopSourceHandlerCallBack (void *info)
 {
-    handleSource(info,NULL,NULL,RunLoopSourceHandleTypeHandled);
+    handleSource(info,NULL,NULL,LTRunLoopSourceHandleTypeHandled);
 }
 
-void RunLoopSourceCancelRoutine (void *info, CFRunLoopRef rl, CFStringRef mode)
+void LTRunLoopSourceCancelCallBack (void *info, CFRunLoopRef rl, CFStringRef mode)
 {
-    handleSource(info,rl,mode,RunLoopSourceHandleTypeCanceled);
+    handleSource(info,rl,mode,LTRunLoopSourceHandleTypeCanceled);
 }
 
 #pragma mark - getters and setters

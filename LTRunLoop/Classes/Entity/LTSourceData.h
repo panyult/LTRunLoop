@@ -7,11 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger,RunLoopSourceHandleType) {
-    RunLoopSourceHandleTypeNotScheduled = 0,
-    RunLoopSourceHandleTypeWillScheduled,
-    RunLoopSourceHandleTypeHandled,
-    RunLoopSourceHandleTypeCanceled,
+typedef NS_ENUM(NSUInteger,LTRunLoopSourceHandleType) {
+    LTRunLoopSourceHandleTypeNotScheduled = 0,
+    LTRunLoopSourceHandleTypeScheduled,
+    LTRunLoopSourceHandleTypeHandled,
+    LTRunLoopSourceHandleTypeCanceled,
 };
 
 @class LTSourceData;
@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger,RunLoopSourceHandleType) {
 /**
  default is RunLoopSourceHandleTypeNotScheduled
  */
-@property (nonatomic, assign) RunLoopSourceHandleType handleType;
+@property (nonatomic, assign) LTRunLoopSourceHandleType handleType;
 
 @property (nonatomic, strong) id peddingData;
 
