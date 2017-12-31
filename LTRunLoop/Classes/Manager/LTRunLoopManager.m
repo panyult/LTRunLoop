@@ -13,7 +13,6 @@ static LTRunLoopManager *_manager;
 
 static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
 
-
 @interface LTRunLoopManager()
 /**
  Apple recommands that it's better to create a thread via GCD than NSThread, but here using NSThread to creat a thread, thus we can set a self-define name and other initializations for the thread ,which is helpful to debug.
@@ -23,6 +22,7 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
 @property (nonatomic, strong) NSMutableArray *runLoopContextArray;
 
 @property (nonatomic, strong) NSMutableDictionary *dataToHandlerDictionary;
+
 @end
 
 @implementation LTRunLoopManager
@@ -53,23 +53,13 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
     return _manager;
 }
 
-#pragma mark - bind handler class and data class
-
-- (void)registerHandlerClassName:(NSString *)handlerClassName forDataClassName:(NSString *)dataClassName
-{
-    
-    NSAssert(![DataChecker isStringEmptyOrNil:handlerClassName]
-             && ![DataChecker isStringEmptyOrNil:dataClassName],
-             @"handlerClassName or dataClassName can not be nil");
-    
-    [_dataToHandlerDictionary setObject:dataClassName forKey:handlerClassName];
-}
-
-
 #pragma mark - start the worker thread
 
 - (void)start
 {
+    if (_workerThread.isExecuting) {
+        return;
+    }
     [_workerThread start];
 }
 
@@ -134,6 +124,14 @@ static NSString *const kWorkerThreadName = @"LTRunLoopManager_WorkerThread";
     [source addTask:task];
     
     [source fireCommandsOnRunLoop:self.workerRunLoop];
+
+}
+
+#pragma mark - status
+
+- (BOOL)isWorkerThreadExcuting
+{
+    return _workerThread.isExecuting;
 }
 
 @end

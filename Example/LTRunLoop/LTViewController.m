@@ -58,6 +58,7 @@
     CGRect frame = self.tipLabel.frame;
     frame.origin.y = CGRectGetMaxY(self.useClassHandlerButton.frame) + 20;
     self.tipLabel.frame = frame;
+    
 }
 
 #pragma mark - RunLoopSourceHandler
@@ -112,7 +113,9 @@
 {
     CGFloat height = 50;
     CGFloat paddingV = 20;
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(10, index*(height+paddingV) + 64 ,300, height)];
+    CGFloat width = 300;
+    CGFloat x = ([UIScreen mainScreen].bounds.size.width - width)/2.0;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, index*(height+paddingV) + 64 ,width, height)];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];

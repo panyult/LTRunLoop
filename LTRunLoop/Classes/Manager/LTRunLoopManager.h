@@ -10,11 +10,17 @@
 
 @interface LTRunLoopManager : NSObject
 
-+ (instancetype)manager;
+@property (nonatomic, readonly) BOOL isWorkerThreadExcuting;
 
-- (void)addSourceTask:(LTSourceTask *)task;
+/**
+ A shared singleton you can use to start a run loop and add source task.
+
+ @return LTRunLoopManager singleton.
+ */
++ (instancetype)manager;
 
 - (void)start;
 
+- (void)addSourceTask:(LTSourceTask *)task;
 
 @end

@@ -146,8 +146,11 @@
 		A5B563D9DDEF5338E9353A4F3C701F12 /* KWFailure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817B8B8D0976C60AB26972ADC2744C8 /* KWFailure.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A5C4AA471824BDA48E13B7F547FEE996 /* KWIntercept.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F951D4C9BA86B6275953E50F99E468 /* KWIntercept.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6DAF6CB9A191442FB2446B9C267428E /* KWContainStringMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BF71FA9EABFDBF14D69972D2797205 /* KWContainStringMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6FD58F21FF877AC009523D1 /* LTRunLoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD58F11FF877AC009523D1 /* LTRunLoopTests.m */; };
 		A6FD58F41FF877AC009523D1 /* LTRunLoop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7347187F525511CC84F8323039B64B76 /* LTRunLoop.framework */; };
+		A6FD59041FF88A9E009523D1 /* LTTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD59031FF88A9E009523D1 /* LTTestCase.m */; };
+		A6FD59091FF88BC5009523D1 /* LTSourceTaskTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD59081FF88BC5009523D1 /* LTSourceTaskTest.m */; };
+		A6FD590D1FF89106009523D1 /* RunLoopSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD590C1FF89106009523D1 /* RunLoopSourceTest.m */; };
+		A6FD590F1FF891E1009523D1 /* LTRunLoopManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD590E1FF891E1009523D1 /* LTRunLoopManagerTest.m */; };
 		A73C37C44D91CB867CFCADBD0F614423 /* KWCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F57FF44A05A12D46A78670FB82766BD /* KWCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA1525F39599AD311768B778D683D4B0 /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDE55DCFDF745F85F9DBDC4CF312B16 /* RunLoopContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA5D9CC9D6CDA309F795E264285180FF /* NSObject+KiwiMockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309AAF7264238FA8DE25CFFF363DDC /* NSObject+KiwiMockAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -426,8 +429,12 @@
 		A399FFBAEFCA157BF63057B4CF90D256 /* KWMatchers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMatchers.m; path = Classes/Core/KWMatchers.m; sourceTree = "<group>"; };
 		A69B4895CF1F2C4895181F2765231E69 /* KWInvocationCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWInvocationCapturer.h; path = Classes/Core/KWInvocationCapturer.h; sourceTree = "<group>"; };
 		A6FD58EF1FF877AC009523D1 /* LTRunLoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTRunLoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6FD58F11FF877AC009523D1 /* LTRunLoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopTests.m; sourceTree = "<group>"; };
 		A6FD58F31FF877AC009523D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FD59021FF88A9E009523D1 /* LTTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTTestCase.h; sourceTree = "<group>"; };
+		A6FD59031FF88A9E009523D1 /* LTTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTTestCase.m; sourceTree = "<group>"; };
+		A6FD59081FF88BC5009523D1 /* LTSourceTaskTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSourceTaskTest.m; sourceTree = "<group>"; };
+		A6FD590C1FF89106009523D1 /* RunLoopSourceTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopSourceTest.m; sourceTree = "<group>"; };
+		A6FD590E1FF891E1009523D1 /* LTRunLoopManagerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTRunLoopManagerTest.m; sourceTree = "<group>"; };
 		A7AA16D9C496306BA25EFC5300419AD8 /* KWNotificationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWNotificationMatcher.m; path = Classes/Matchers/KWNotificationMatcher.m; sourceTree = "<group>"; };
 		A96809F5CF54E34E974DEA79D29333E9 /* KWVerifying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWVerifying.h; path = Classes/Verifiers/KWVerifying.h; sourceTree = "<group>"; };
 		A9CB4A49264C7A157D2A3CDAF3CDAC58 /* KWSymbolicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWSymbolicator.h; path = Classes/Core/KWSymbolicator.h; sourceTree = "<group>"; };
@@ -867,10 +874,38 @@
 		A6FD58F01FF877AC009523D1 /* LTRunLoopTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6FD58F11FF877AC009523D1 /* LTRunLoopTests.m */,
+				A6FD59061FF88ADB009523D1 /* Manager */,
+				A6FD59051FF88AA9009523D1 /* Entity */,
+				A6FD59071FF88AE8009523D1 /* Helper */,
+				A6FD59021FF88A9E009523D1 /* LTTestCase.h */,
+				A6FD59031FF88A9E009523D1 /* LTTestCase.m */,
 				A6FD58F31FF877AC009523D1 /* Info.plist */,
 			);
 			path = LTRunLoopTests;
+			sourceTree = "<group>";
+		};
+		A6FD59051FF88AA9009523D1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD59081FF88BC5009523D1 /* LTSourceTaskTest.m */,
+				A6FD590C1FF89106009523D1 /* RunLoopSourceTest.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A6FD59061FF88ADB009523D1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A6FD590E1FF891E1009523D1 /* LTRunLoopManagerTest.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A6FD59071FF88AE8009523D1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */ = {
@@ -925,9 +960,9 @@
 			isa = PBXGroup;
 			children = (
 				994599757A05A3108FA53C517C07F7F9 /* LTRunLoop.h */,
+				ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */,
 				78D1D1FA57E9A8054E41F5B51B821569 /* Entity */,
 				E133724085046649B2E347E730E1FEC2 /* Helper */,
-				ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */,
 				6E6041A5883742BE8598619D09EBC064 /* Pod */,
 				0C0A9ED5904F94424870B1DA020174CF /* Support Files */,
 			);
@@ -1190,7 +1225,6 @@
 				TargetAttributes = {
 					A6FD58EE1FF877AC009523D1 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 2AC57UFDP2;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1340,7 +1374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FD58F21FF877AC009523D1 /* LTRunLoopTests.m in Sources */,
+				A6FD59091FF88BC5009523D1 /* LTSourceTaskTest.m in Sources */,
+				A6FD590F1FF891E1009523D1 /* LTRunLoopManagerTest.m in Sources */,
+				A6FD590D1FF89106009523D1 /* RunLoopSourceTest.m in Sources */,
+				A6FD59041FF88A9E009523D1 /* LTTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1613,7 +1650,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2AC57UFDP2;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1635,7 +1672,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2AC57UFDP2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LTRunLoopTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
