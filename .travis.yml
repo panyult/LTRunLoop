@@ -11,4 +11,10 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/LTRunLoop.xcworkspace -scheme LTRunLoop-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+
+- xctool -project LTRunLoop.xcodeproj -scheme LTRunLoopTests build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+
 - pod lib lint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
