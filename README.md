@@ -21,6 +21,8 @@ Using **LTRunLoop** you can just deliver your pending data,which needs to be han
 
 ***Using an object to handle the data***
 
+the object should confirm the `protocol` ***LTRunLoopSourceHandler***.
+
 ```ObjC
 
     id data = [NSString stringWithFormat:@"success test send a LTRunLoopTask\n%d",++self.count];
@@ -33,14 +35,19 @@ Using **LTRunLoop** you can just deliver your pending data,which needs to be han
 ```
 
 ***Or Using a class to handle the data***
-, but the class must confirm the `protocol` ***RunLoopSourceHandler***.
+
+, but the class must confirm the `protocol` ***LTRunLoopSourceHandler***.
 
 ```ObjC
     static int count = 0;
     
     id data = [NSString stringWithFormat:@"success test send a LTRunLoopTask\n%d",++count];
 	
-    LTSourceTask *task = [LTSourceTask sourceTaskWithPeddingData:data sourceHandlerClassName:NSStringFromClass(LTViewController.class)];
+    LTSourceTask *task = [LTSourceTask sourceTaskWithPeddingData:data
+    sourceHandlerClassName:NSStringFromClass(LTViewController.class)
+    completion:^(LTSourceData *sourceData){
+    // code you want to execute in the call back...
+    }];];
     
     [[LTRunLoopManager manager] addSourceTask:task];
     

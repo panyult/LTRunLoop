@@ -92,7 +92,7 @@ void handleDataAccordingTask(LTSourceData *data, LTSourceTask *task)
         
         Class handlerClass = NSClassFromString(task.sourceHandlerClassName);
         
-        if (handlerClass && class_conformsToProtocol(handlerClass, @protocol(RunLoopSourceHandler))) {
+        if (handlerClass && class_conformsToProtocol(handlerClass, @protocol(LTRunLoopSourceHandler))) {
             
             [[handlerClass class] performSelector:@selector(class_runLoopSourceHandled:) withObject:data];
             

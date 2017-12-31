@@ -15,7 +15,7 @@
 #pragma mark - life cycle
 
 + (instancetype)sourceTaskWithPeddingData:(id)data
-                                sourceHandler:(id<RunLoopSourceHandler>)sourceHandler
+                                sourceHandler:(id<LTRunLoopSourceHandler>)sourceHandler
 {
     return [self sourceTaskWithPeddingData:data
                              sourceHandler:sourceHandler
@@ -40,7 +40,7 @@
 }
 
 + (instancetype)sourceTaskWithPeddingData:(id)data
-                                sourceHandler:(id<RunLoopSourceHandler>)sourceHandler
+                                sourceHandler:(id<LTRunLoopSourceHandler>)sourceHandler
                      orSourceHandlerClassName:(NSString *)sourceHandlerClassName
                                completion:(SourceTaskCompletonBlock)completion
 {

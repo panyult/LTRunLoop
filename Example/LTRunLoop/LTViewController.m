@@ -10,7 +10,7 @@
 #import <LTRunLoop/LTRunLoop.h>
 #import "LTSourceHandlerUtility.h"
 
-@interface LTViewController ()<RunLoopSourceHandler>
+@interface LTViewController ()<LTRunLoopSourceHandler>
 
 @property (nonatomic, strong) UIButton *useObjHandlerButton;
 @property (nonatomic, strong) UIButton *useClassHandlerButton;
@@ -91,6 +91,7 @@
 {
     
     __weak typeof(self) weakSelf = self;
+    
     LTSourceTask *task = [LTSourceTask sourceTaskWithPeddingData:[self getDataWithPreString:@"class_handler"]
                                           sourceHandlerClassName:NSStringFromClass([LTSourceHandlerUtility class])
                                                       completion:^(LTSourceData *sourceData){
@@ -104,7 +105,7 @@
 
 - (NSString *)getDataWithPreString:(NSString *)preString
 {
-    return [NSString stringWithFormat:@" %@_success test send a LTRunLoopTask\n%d",preString,++self.count];
+    return [NSString stringWithFormat:@" %@_success \n%d",preString,++self.count];
 }
 
 - (UIButton *)buttonWithTitle:(NSString *)title target:(id)target sel:(SEL)sel index:(int)index
@@ -114,7 +115,10 @@
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(10, index*(height+paddingV) + 64 ,300, height)];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+
     [button setBackgroundColor:[UIColor purpleColor]];
+    
     [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
@@ -128,7 +132,7 @@
         _tipLabel.center = self.view.center;
         _tipLabel.numberOfLines = 0;
         _tipLabel.textAlignment = NSTextAlignmentCenter;
-        _tipLabel.text = @"click the button above";
+        _tipLabel.text = @"click the buttons above";
     }
     return _tipLabel;
 }

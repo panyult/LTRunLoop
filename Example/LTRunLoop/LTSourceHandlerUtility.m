@@ -10,7 +10,7 @@
 
 #import <LTRunLoop/LTRunLoop.h>
 
-@interface LTSourceHandlerUtility() <RunLoopSourceHandler>
+@interface LTSourceHandlerUtility() <LTRunLoopSourceHandler>
 
 @end
 

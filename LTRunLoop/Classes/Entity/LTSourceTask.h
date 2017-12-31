@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RunLoopSourceHandler.h"
+#import "LTRunLoopSourceHandler.h"
 @class LTSourceTask;
 
 typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
@@ -23,7 +23,7 @@ typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
  
  @Note When this property was set, the methods of 'sourceHandlerClassName' Class wuould not been invoked.Whenever the 'kLTRunLoopSourceHandleNotification' will be post and the RunLoopSource along with it in the notification's object.
  */
-@property (nonatomic, weak  ) id<RunLoopSourceHandler> sourceHandler;
+@property (nonatomic, weak  ) id<LTRunLoopSourceHandler> sourceHandler;
 
 /**
  When you just want to hand the source off to a Class, set your target Class name to this property.
@@ -35,7 +35,7 @@ typedef void(^SourceTaskCompletonBlock)(LTSourceData *sourceData);
 @property (nonatomic, copy  ) SourceTaskCompletonBlock completionBlock;
 
 + (instancetype)sourceTaskWithPeddingData:(id)data
-                                sourceHandler:(id<RunLoopSourceHandler>)sourceHandler;
+                                sourceHandler:(id<LTRunLoopSourceHandler>)sourceHandler;
 
 + (instancetype)sourceTaskWithPeddingData:(id)data
                      sourceHandlerClassName:(NSString *)sourceHandlerClassName;

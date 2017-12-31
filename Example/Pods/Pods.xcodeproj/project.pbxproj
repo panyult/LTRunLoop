@@ -59,7 +59,7 @@
 		40C29E91A157EF6D0EE70422CF55D3AE /* KWAny.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693F5D174F75EDFEB1BC836C59DDE9 /* KWAny.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41ED16E59D55EBD39A816907201A90FE /* KWPendingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C5F3A8B1C22669C9015DF1E792C422 /* KWPendingNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4242422F8C700157752250ACA7965188 /* KWSharedExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 63ABCD397FD698C7131D70DFC00130A3 /* KWSharedExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		427773ECAA80789CDC523528708F3B96 /* RunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427773ECAA80789CDC523528708F3B96 /* LTRunLoopSourceHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5372A72F0772974A040C59925DE830 /* LTRunLoopSourceHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435A88DE4647DB8AADD35C8D5C496758 /* DataChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = EB93406DE2B22C63F55DE9705248F184 /* DataChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		437632631ADE8B382D4B764E249B0827 /* KWMatcherFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D3645C5787E22DC23E69038A590237 /* KWMatcherFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4388C1F4FAAD1B667029656D91EF021B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F309FCF4CAEDEC34D0336E8B7D372FF9 /* Foundation.framework */; };
@@ -450,7 +450,7 @@
 		D695C186FB90432ADB08FE1703889E56 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Classes/Core/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
 		D7E2FF31B9CE40ECB44B407C23CD6D6E /* KWMock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMock.m; path = Classes/Mocking/KWMock.m; sourceTree = "<group>"; };
 		DBFD351D46DCD0055057EC9DAFE42BB5 /* KWMessagePattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMessagePattern.m; path = Classes/Core/KWMessagePattern.m; sourceTree = "<group>"; };
-		DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RunLoopSourceHandler.h; sourceTree = "<group>"; };
+		DC5372A72F0772974A040C59925DE830 /* LTRunLoopSourceHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LTRunLoopSourceHandler.h; sourceTree = "<group>"; };
 		DC76BC82943659A263E5D692A5B1C243 /* KWExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExample.h; path = Classes/Core/KWExample.h; sourceTree = "<group>"; };
 		DDF0587AEE19D1E91AAAD661C2DD7E8E /* KWBeZeroMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeZeroMatcher.m; path = Classes/Matchers/KWBeZeroMatcher.m; sourceTree = "<group>"; };
 		DDFE98B6F09C2C9EAB78C530239BF122 /* KWCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWCallSite.m; path = Classes/Core/KWCallSite.m; sourceTree = "<group>"; };
@@ -840,7 +840,7 @@
 			children = (
 				EAF229170EC012F52D5AC99AC34CE215 /* LTRunLoopManager.h */,
 				8F7A9644C6C0034C8C5D8A483C376500 /* LTRunLoopManager.m */,
-				DC5372A72F0772974A040C59925DE830 /* RunLoopSourceHandler.h */,
+				DC5372A72F0772974A040C59925DE830 /* LTRunLoopSourceHandler.h */,
 			);
 			name = Manager;
 			path = LTRunLoop/Classes/Manager;
@@ -922,7 +922,7 @@
 				19E504B4285AE251FC80F9B941DDA104 /* LTSourceTask.h in Headers */,
 				AA1525F39599AD311768B778D683D4B0 /* RunLoopContext.h in Headers */,
 				EEEFD30A3BC1E2A06DD69CE1E7F504F9 /* RunLoopSource.h in Headers */,
-				427773ECAA80789CDC523528708F3B96 /* RunLoopSourceHandler.h in Headers */,
+				427773ECAA80789CDC523528708F3B96 /* LTRunLoopSourceHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
