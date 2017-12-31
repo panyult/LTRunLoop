@@ -252,7 +252,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = panyult;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2AC57UFDP2;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 2AC57UFDP2;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -532,7 +536,7 @@
 			baseConfigurationReference = 20D36676840710F7575F0D2A /* Pods-LTRunLoop_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -552,7 +556,7 @@
 			baseConfigurationReference = DB736ADAE89F24469E49A1FF /* Pods-LTRunLoop_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -572,7 +576,7 @@
 			baseConfigurationReference = 5585BEEA9A57BBE35B7D5F2C /* Pods-LTRunLoop_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -605,7 +609,7 @@
 			baseConfigurationReference = 7146773F29C39C8016A38B98 /* Pods-LTRunLoop_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
