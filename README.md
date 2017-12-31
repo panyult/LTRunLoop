@@ -2,7 +2,6 @@
 
 [![CI Status](http://img.shields.io/travis/panyult/LTRunLoop.svg?style=flat)](https://travis-ci.org/panyult/LTRunLoop)
 [![codecov.io](https://codecov.io/gh/panyult/LTRunLoop/coverage.svg?branch=master)](https://codecov.io/gh/panyult/LTRunLoop?branch=master)
-
 [![Version](https://img.shields.io/cocoapods/v/LTRunLoop.svg?style=flat)](http://cocoapods.org/pods/LTRunLoop)
 [![License](https://img.shields.io/cocoapods/l/LTRunLoop.svg?style=flat)](http://cocoapods.org/pods/LTRunLoop)
 [![Platform](https://img.shields.io/cocoapods/p/LTRunLoop.svg?style=flat)](http://cocoapods.org/pods/LTRunLoop)
