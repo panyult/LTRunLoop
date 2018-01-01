@@ -151,7 +151,6 @@
 		A6FD59091FF88BC5009523D1 /* LTSourceTaskTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD59081FF88BC5009523D1 /* LTSourceTaskTest.m */; };
 		A6FD590D1FF89106009523D1 /* RunLoopSourceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD590C1FF89106009523D1 /* RunLoopSourceTest.m */; };
 		A6FD590F1FF891E1009523D1 /* LTRunLoopManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FD590E1FF891E1009523D1 /* LTRunLoopManagerTest.m */; };
-		A6FD59121FF8C5C7009523D1 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAB58E37FA763FCC2371AA4EE141C4B /* Kiwi.framework */; };
 		A73C37C44D91CB867CFCADBD0F614423 /* KWCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F57FF44A05A12D46A78670FB82766BD /* KWCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA1525F39599AD311768B778D683D4B0 /* RunLoopContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDE55DCFDF745F85F9DBDC4CF312B16 /* RunLoopContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA5D9CC9D6CDA309F795E264285180FF /* NSObject+KiwiMockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309AAF7264238FA8DE25CFFF363DDC /* NSObject+KiwiMockAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -236,19 +235,19 @@
 			remoteGlobalIDString = 3C5890BB9E597FCE85288A9DFC2AE77E;
 			remoteInfo = LTRunLoop;
 		};
+		A6DCC3D21FF9EF9900F8B973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC033EB15A8DCED2F72CBF393902F87;
+			remoteInfo = Kiwi;
+		};
 		A6FD58FE1FF886F8009523D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3C5890BB9E597FCE85288A9DFC2AE77E;
 			remoteInfo = LTRunLoop;
-		};
-		A6FD59101FF8C5B5009523D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFC033EB15A8DCED2F72CBF393902F87;
-			remoteInfo = Kiwi;
 		};
 		B611B384FAF43C6FECA439D10AC041A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -535,7 +534,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FD59121FF8C5C7009523D1 /* Kiwi.framework in Frameworks */,
 				A6FD58F41FF877AC009523D1 /* LTRunLoop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,7 +876,6 @@
 			children = (
 				A6FD59061FF88ADB009523D1 /* Manager */,
 				A6FD59051FF88AA9009523D1 /* Entity */,
-				A6FD59071FF88AE8009523D1 /* Helper */,
 				A6FD59021FF88A9E009523D1 /* LTTestCase.h */,
 				A6FD59031FF88A9E009523D1 /* LTTestCase.m */,
 				A6FD58F31FF877AC009523D1 /* Info.plist */,
@@ -901,13 +898,6 @@
 				A6FD590E1FF891E1009523D1 /* LTRunLoopManagerTest.m */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		A6FD59071FF88AE8009523D1 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 		ACBD9D629B7D369EABCB7C006F2EC5E8 /* Manager */ = {
@@ -1173,7 +1163,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A6FD59111FF8C5B5009523D1 /* PBXTargetDependency */,
+				A6DCC3D31FF9EF9900F8B973 /* PBXTargetDependency */,
 				A6FD58FF1FF886F8009523D1 /* PBXTargetDependency */,
 			);
 			name = LTRunLoopTests;
@@ -1227,6 +1217,7 @@
 				TargetAttributes = {
 					A6FD58EE1FF877AC009523D1 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 2AC57UFDP2;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1412,15 +1403,15 @@
 			target = CFC033EB15A8DCED2F72CBF393902F87 /* Kiwi */;
 			targetProxy = B611B384FAF43C6FECA439D10AC041A1 /* PBXContainerItemProxy */;
 		};
+		A6DCC3D31FF9EF9900F8B973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC033EB15A8DCED2F72CBF393902F87 /* Kiwi */;
+			targetProxy = A6DCC3D21FF9EF9900F8B973 /* PBXContainerItemProxy */;
+		};
 		A6FD58FF1FF886F8009523D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C5890BB9E597FCE85288A9DFC2AE77E /* LTRunLoop */;
 			targetProxy = A6FD58FE1FF886F8009523D1 /* PBXContainerItemProxy */;
-		};
-		A6FD59111FF8C5B5009523D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFC033EB15A8DCED2F72CBF393902F87 /* Kiwi */;
-			targetProxy = A6FD59101FF8C5B5009523D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1651,8 +1642,9 @@
 			baseConfigurationReference = B5D3C6D38A0E10EA0B67D2033993D4A5 /* Pods-LTRunLoop_Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1674,7 +1666,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 2AC57UFDP2;
 				INFOPLIST_FILE = LTRunLoopTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
