@@ -7,6 +7,7 @@
 
 #import "LTTestCase.h"
 #import "LTRunLoopManager.h"
+
 @class LTRunLoopManagerTest;
 static NSString *const kLTSourceTask_TestData = @"LTSourceTask_test_useObject";
 
@@ -52,7 +53,9 @@ LTRunLoopManagerTest *_LTRunLoopManagerTest = nil;
         [[LTRunLoopManager manager] addSourceTask:task];
         
     });
-    [self waitForExpectations:@[self.addSourceTaskUseObjectHandleException] timeout:2.0];
+    [self waitForExpectationsWithCommonTimeout];
+
+//    [self waitForExpectations:@[self.addSourceTaskUseObjectHandleException] timeout:2.0];
 
 }
 
@@ -81,7 +84,9 @@ LTRunLoopManagerTest *_LTRunLoopManagerTest = nil;
         [[LTRunLoopManager manager] addSourceTask:task];
         
     });
-    [self waitForExpectations:@[self.addSourceTaskUseClassHandleException] timeout:2.0];
+    [self waitForExpectationsWithCommonTimeout];
+    
+//    [self waitForExpectations:@[self.addSourceTaskUseClassHandleException] timeout:2.0];
 
 }
 
