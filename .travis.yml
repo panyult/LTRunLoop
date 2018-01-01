@@ -19,5 +19,5 @@ script:
   - sleep 5
 
 after_success:
-	- sleep 5
+    - sleep 5
     - bash <(curl -s https://codecov.io/bash)
