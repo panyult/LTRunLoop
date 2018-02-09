@@ -12,12 +12,9 @@ language: objective-c
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/LTRunLoop.xcworkspace -scheme LTRunLoop-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 
-  - xcodebuild test -workspace Example/LTRunLoop.xcworkspace -scheme 'LTRunLoopTests' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' -configuration Debug | xcpretty -c
+  # - xcodebuild test -workspace Example/LTRunLoop.xcworkspace -scheme 'LTRunLoopTests' -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' -configuration Debug | xcpretty -c
 
-  - sleep 5
   - pod lib lint
-  - sleep 5
 
 after_success:
-    - sleep 5
     - bash <(curl -s https://codecov.io/bash)
